@@ -1,0 +1,257 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PRINT05
+</name>
+</assembly>
+<members>
+<member name="T:GRAN31.UI.Sheet1Model_Block1">
+	<summary>
+ 男女別
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.Sheet1Model_Block2">
+	<summary>
+ 年齢別
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.Sheet1Model_Block3">
+	<summary>
+ 種別区分
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.Sheet1Model_Block4">
+	<summary>
+ 利用別
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.HikakuValue">
+	<summary>
+ 比較用のモデル
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.Customer">
+	<summary>
+ 顧客クラス
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmPRINT05._txtNCSNO">
+	<summary>
+ 一覧から取得した顧客番号セットテキストボックス
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.frmPRINT04_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.dtpSEATDT_ValueChanged(System.Object,System.EventArgs)">
+	<summary>
+ 営業日付テキストボックス_ValueChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.cmbTerm_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ 期間コンボボックス
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.cmbTerm2_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ 期間コンボボックス２
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.func8">
+	<summary>
+ 印刷ボタン_Click
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.rbSheet1_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 期間来場者集計_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.rbSheet2_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 期間来場者比較集計_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.rbSheet3_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 期間来場者個人一覧_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.rbSheet4_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 期間来場者個人比較一覧_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.cmbKSBKB_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ ﾌﾘｰｶｰﾄﾞを選んだらコントロール無効化
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.txt_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ 数値以外入力禁止
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.txtStaNCSNO_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 顧客番号を0詰め
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.txtNCSNO_Enter(System.Object,System.EventArgs)">
+	<summary>
+ 顧客番号テキストボックス_Enter
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.btnStaZougen_Click(System.Object,System.EventArgs)">
+	<summary>
+ ±トグルボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.btnEndZougen_Click(System.Object,System.EventArgs)">
+	<summary>
+ ±トグルボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.frmPRINT05_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ ESCキーで処理の中断
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.func3">
+	<summary>
+ F3一覧ボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.GetJoinENTTRA_View(System.Collections.Generic.IEnumerable{GRAN31.UI.JoinENTTRA_View}@,System.String,System.String)">
+	<summary>
+ 入場者クエリと顧客マスタ、顧客種別マスタを統合したクエリを取得する(フリーカードを含む)
+ </summary>
+	<param name="query"></param>
+	<param name="date1"></param>
+	<param name="date2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.GetEntCount_View(System.Collections.Generic.IEnumerable{GRAN31.UI.EntCount_View}@,System.String,System.String)">
+	<summary>
+ 入場者クエリと顧客マスタ、顧客種別マスタを統合して入場数をカウントしたクエリを取得する（フリーカードも含む）*SQL改善
+ </summary>
+	<param name="query"></param>
+	<param name="date1"></param>
+	<param name="date2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.PrintSheet1">
+	<summary>
+ 期間来場者集計の印刷(SQL改善)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.PrintSheet2">
+	<summary>
+ 期間来場者比較集計の印刷(SQL改善)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.PrintSheet3">
+	<summary>
+ 期間来場者個人一覧の印刷(SQL改善)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.PrintSheet4">
+	<summary>
+ 期間来場者個人比較一覧の印刷(SQL改善)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.CreateDiffCountView(System.Collections.Generic.IEnumerable{GRAN31.UI.EntCount_View},System.Collections.Generic.IEnumerable{GRAN31.UI.EntCount_View})">
+	<summary>
+ 二つの入場カウントクエリから結果を生成。フィルタリングも行う。
+ </summary>
+	<param name="ent_count_query1"></param>
+	<param name="ent_count_query2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.GetKBMAST">
+	<summary>
+ 顧客種別マスタの取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.IsAbort">
+	<summary>
+ 処理の中断が呼ばれた
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.ResetAbort">
+	<summary>
+ 処理の中断の初期化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.GetAge(System.String)">
+	<summary>
+ 年齢を取得する
+ </summary>
+	<param name="str"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT05.ApplySEATDT(System.Windows.Forms.DateTimePicker@,System.Windows.Forms.DateTimePicker@,System.Int32)">
+	<summary>
+ 選択したTEAMに応じてSEATDTをセット
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,446 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CSMAST01
+</name>
+</assembly>
+<members>
+<member name="P:GRAN31.UI.frmColorSelect.SelectColor">
+	<summary>
+ 選択カラー
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmColorSelect.SelectAll">
+	<summary>
+ 更新範囲区分
+ </summary>
+	<value>【False】特定の顧客情報【True】全ての顧客情報</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmColorSelect.frmColorSelect_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmColorSelect.txtMANNO_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 顧客番号テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmColorSelect.btnColor_Click(System.Object,System.EventArgs)">
+	<summary>
+ カラーボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmColorSelect.btnEnd_Click(System.Object,System.EventArgs)">
+	<summary>
+ 閉じるボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="P:GRAN31.UI.frmPAYSELECT.PaySelect">
+	<summary>
+ 精算区分
+ </summary>
+	<value>【0】キャンセル【1】現金精算【2】打席カード</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPAYSELECT.frmPAYSELECT_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPAYSELECT.frmPAYSELECT_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPAYSELECT.btnPaySelect_Click(System.Object,System.EventArgs)">
+	<summary>
+ 精算区分ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCSMAST01._dtKBMAST">
+	<summary>
+ 顧客種別情報
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCSMAST01._dtZIPMTA">
+	<summary>
+ 住所情報
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCSMAST01._intRegisterKbn">
+	<summary>
+ 新規・更新区別【0】新規【1】更新
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCSMAST01._dtUPDDTM">
+	<summary>
+ 画面表示時の最新の更新日時
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCSMAST01._strDelSCLMANNO">
+	<summary>
+ 紐付削除スクール生番号
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCSMAST01._strSCLKBN">
+	<summary>
+ スクール生状態保持(年会費処理用)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCSMAST01._intNCSNO">
+	<summary>
+ 画面呼び出し時顧客番号
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCSMAST01._strSTFCODE">
+	<summary>
+ スタッフコード
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCSMAST01._strSTFNAME">
+	<summary>
+ スタッフ名
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCSMAST01._intDbNCSRANK">
+	<summary>
+ 画面表示した時点での顧客種別
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.frmCSMAST01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.frmCSMAST01_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+	<summary>
+ フォーム_FormClosed
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.btnColorKbn_Click(System.Object,System.EventArgs)">
+	<summary>
+ カラーボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.btnCARDTORIIST01_Click(System.Object,System.EventArgs)">
+	<summary>
+ カード取引履歴ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.btnFEEHIST01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 年会費履歴ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.btnADDRESS_Click(System.Object,System.EventArgs)">
+	<summary>
+ 住所ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.btnZIP_Click(System.Object,System.EventArgs)">
+	<summary>
+ 〒ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.btnUpdDMEMBER_Click(System.Object,System.EventArgs)">
+	<summary>
+ 期限更新ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.btnCard_Click(System.Object,System.EventArgs)">
+	<summary>
+ カード挿入ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.btnISSUE_Click(System.Object,System.EventArgs)">
+	<summary>
+ カード発行ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.btnHakkoClear_Click(System.Object,System.EventArgs)">
+	<summary>
+ 発行料精算クリアボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.btnCardNCSRANK_Click(System.Object,System.EventArgs)">
+	<summary>
+ カード顧客種別書き換えボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.btnCsOpen_Click(System.Object,System.EventArgs)">
+	<summary>
+ 個人情報表示ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.cmbNCSRANK_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ 顧客種別コンボボックス_SelectedIndexChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.txtNCSNO_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 顧客番号テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.txtDSCLMANNO_Validated(System.Object,System.EventArgs)">
+	<summary>
+ スクール生番号テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.txtKRKNO_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 協力金番号テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.btnMANSEARCH01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 一覧ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.txtNCSNO_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ 顧客番号テキストボックス_KeyDown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.txtDBIRTH_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 誕生日テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.txtNZIP_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 郵便番号テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.txtDMEMBER_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 会員期限テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.txtCEMAIL_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ メールアドレステキストボックス_KeyPress
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.txtTelBox_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ 電話番号テキストボックス_KeyPress
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.txtBox_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ テキストボックス_KeyPress
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.txtBox_Enter(System.Object,System.EventArgs)">
+	<summary>
+ テキストボックス_Enter
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.txtBox_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ テキストボックス_MouseDown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.func3">
+	<summary>
+ F3一覧ボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.func9">
+	<summary>
+ F9削除ボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.func11">
+	<summary>
+ F11クリアボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.func12">
+	<summary>
+ F12登録ボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.GetZIPMTA">
+	<summary>
+ 住所情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.ChkNewNCSNO">
+	<summary>
+ 現時点での最終顧客番号確認
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.GetNewNCSNO">
+	<summary>
+ 顧客番号取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.GetNewCARDID">
+	<summary>
+ カード番号取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.GetKBMAST">
+	<summary>
+ 顧客種別情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.GetSUMUSEKIN">
+	<summary>
+ 総利用球数金額
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.GetCSMAST(System.Boolean)">
+	<summary>
+ 顧客情報取得
+ </summary>
+	<param name="blnCard">カードによる検索</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.CheckRegister(System.String@)">
+	<summary>
+ 登録データチェック
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.InsRegister">
+	<summary>
+ 新規登録
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.UpdRegister(System.Boolean,System.Boolean)">
+	<summary>
+ 更新登録
+ </summary>
+	<param name="blnUpdDCARDSEQ">カード番号を更新するかどうか【True】する【False】しない</param>
+	<param name="blnUpdKINSMA">金額サマリを更新するかどうか【True】する【False】しない</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.UpdMANMST">
+	<summary>
+ スクール生情報更新
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.ChkSclManInfo">
+	<summary>
+ スクール生重複チェック
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.SetSclManInfo">
+	<summary>
+ スクール生情報を取得し画面コントロールに設定
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.UpdCKBFEE(System.String@,System.Int32@,System.Int32@)">
+	<summary>
+ 年会費精算処理
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSMAST01.CheckCard">
+	<summary>
+ 受付カードが同じか確認
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

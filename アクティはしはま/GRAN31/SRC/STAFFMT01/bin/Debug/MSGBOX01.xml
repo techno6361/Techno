@@ -1,0 +1,75 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MSGBOX01
+</name>
+</assembly>
+<members>
+<member name="F:GRAN29.UI.frmMSGBOX01._intEndCnt">
+	<summary>
+ 画面終了カウント(10で終了)
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN29.UI.frmMSGBOX01.Reply">
+	<summary>
+ 確認メッセージ返答
+ </summary>
+	<value>【OK】True【キャンセル】False</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmMSGBOX01.#ctor(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="Msg">メッセージ内容</param>
+	<param name="MsgType">【0】情報【1】確認【2】エラー【3】注意【4】確認2 </param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmMSGBOX01.AdjustButtonPosition">
+	<summary>
+ OKボタンの位置をダイアログの真ん中に表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmMSGBOX01.frmMSGBOX01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmMSGBOX01.btnOK_Click(System.Object,System.EventArgs)">
+	<summary>
+ OKボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmMSGBOX01.btnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ キャンセルボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmMSGBOX01.Timer1_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_Tick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:GRAN29.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN29.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN29.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,10 @@
+D:\GRAN29\DLL\PRINT12.exe
+D:\GRAN29\DLL\PRINT12.pdb
+D:\GRAN29\DLL\PRINT12.xml
+D:\GRAN29\SRC\PRINT12\obj\Debug\GRAN29.UI.frmPRINT12.resources
+D:\GRAN29\SRC\PRINT12\obj\Debug\GRAN29.UI.Resources.resources
+D:\GRAN29\SRC\PRINT12\obj\Debug\PRINT12.exe
+D:\GRAN29\SRC\PRINT12\obj\Debug\PRINT12.xml
+D:\GRAN29\SRC\PRINT12\obj\Debug\PRINT12.pdb
+D:\GRAN29\SRC\PRINT12\obj\Debug\PRINT12.vbprojResolveAssemblyReference.cache
+D:\GRAN29\SRC\PRINT12\obj\Debug\PRINT12.vbproj.GenerateResource.Cache

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+RECEIPT01
+</name>
+</assembly>
+<members>
+<member name="F:GRAN31.UI.frmRECEIPT01.c_strPRGID">
+	<summary>
+ プログラムID
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmRECEIPT01._strSTFCODE">
+	<summary>
+ スタッフコード
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmRECEIPT01._strSTFNAME">
+	<summary>
+ スタッフ名
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmRECEIPT01.frmRECEIPT01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmRECEIPT01.frmRECEIPT01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmRECEIPT01.dgvRCTTRN_DoubleClick(System.Object,System.EventArgs)">
+	<summary>
+ 領収書グリッド_DoubleClick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmRECEIPT01.btnClear_Click(System.Object,System.EventArgs)">
+	<summary>
+ クリアボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmRECEIPT01.btnPrint_Click(System.Object,System.EventArgs)">
+	<summary>
+ 印刷ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmRECEIPT01.Init">
+	<summary>
+ 画面初期表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmRECEIPT01.GetRCTTRN">
+	<summary>
+ 伝票番号取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmRECEIPT01.Register">
+	<summary>
+ 登録処理
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

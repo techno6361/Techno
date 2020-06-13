@@ -1,0 +1,65 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BaseForm01
+</name>
+</assembly>
+<members>
+<member name="P:GRAN29.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN29.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN29.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="F:GRAN29.UI.BaseForm01.iDatabase">
+	<summary>
+ IDatabaseインターフェースを保持するフィールド変数
+ </summary>
+	<remarks>データベース接続情報</remarks>
+</member><member name="F:GRAN29.UI.BaseForm01.l_Title_FormName">
+	<summary>
+ 画面名（タイトル）
+ </summary>
+	<remarks>画面名（タイトル）</remarks>
+</member><member name="P:GRAN29.UI.BaseForm01.CreateParams">
+	<summary>
+ コントロールボックスの閉じるボタン及び「Alt + F4」を無効にする
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>CreateParamsプロパティをオーバーライドし、コントロールボックスの閉じるボタン及び「Alt + F4」を無効にします</remarks>
+</member><member name="M:GRAN29.UI.BaseForm01.func1">
+	<summary>
+ func1メソッド
+ </summary>
+	<remarks>(デフォルト時)終了ボタンが押下された場合</remarks>
+</member><member name="M:GRAN29.UI.BaseForm01.initializeControl(System.Windows.Forms.Control)">
+	<summary>
+ コントロールの初期処理
+ </summary>
+	<param name="control">処理対象コントロール</param>
+	<remarks>画面起動に必要なコントロールの初期処理を行います</remarks>
+</member><member name="M:GRAN29.UI.BaseForm01.BaseForm01_Load(System.Object,System.EventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.BaseForm01.tspFunc_Click(System.Object,System.EventArgs)">
+	<summary>
+ tspFunc_Clickイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>ツールバー押下イベント</remarks>
+</member>
+</members>
+</doc>

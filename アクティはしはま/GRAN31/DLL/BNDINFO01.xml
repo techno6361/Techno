@@ -1,0 +1,79 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BNDINFO01
+</name>
+</assembly>
+<members>
+<member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:GRAN31.UI.frmBNDINFO01.frmBNDINFO01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmBNDINFO01.btnUpd_Click(System.Object,System.EventArgs)">
+	<summary>
+ 更新ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmBNDINFO01.Init">
+	<summary>
+ 画面初期表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmBNDINFO01.GetCount(System.String)">
+	<summary>
+ 利用回数取得
+ </summary>
+	<param name="strBNDNO"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmBNDINFO01.GetKin(System.String)">
+	<summary>
+ 金額計取得
+ </summary>
+	<param name="strBNDNO"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmBNDINFO01.GetZei(System.String)">
+	<summary>
+ 内税計取得
+ </summary>
+	<param name="strBNDNO"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmBNDINFO01.GetKago(System.String)">
+	<summary>
+ カゴ球数計取得
+ </summary>
+	<param name="strBNDNO"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmBNDINFO01.GetTime(System.String)">
+	<summary>
+ 打放球数計取得
+ </summary>
+	<param name="strBNDNO"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmBNDINFO01.GetMente(System.String)">
+	<summary>
+ メンテ球数計取得
+ </summary>
+	<param name="strBNDNO"></param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

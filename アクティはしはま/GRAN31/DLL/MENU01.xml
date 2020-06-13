@@ -1,0 +1,557 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MENU01
+</name>
+</assembly>
+<members>
+<member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="F:GRAN31.UI.frmMENU01._dcICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMENU01._spSEATLINK">
+	<summary>
+ 打席通信用シリアルポート
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMENU01._intTIMEKB">
+	<summary>
+ 時間帯区分
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMENU01._blnEndFlg">
+	<summary>
+ '業務終了ボタン押したときTrue←スレッド内で使用
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMENU01._blnSeatCom_Err">
+	<summary>
+ 通信変換機またはCOMポートの異常時True
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMENU01._frmMULTIDISP">
+	<summary>
+ 打席情報画面用フォーム
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMENU01._blnMltDispFlg">
+	<summary>
+ 打席表示ﾃﾞｨｽﾌﾟﾚｲ起動確認
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.mciSendString(System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ 呼び出し制御関連
+ </summary>
+	<param name="lpstrCommand"></param>
+	<param name="lpstrRetrunString"></param>
+	<param name="uReturnLength"></param>
+	<param name="hwndCallback"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.frmMENU01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.frmMENU01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.frmMENU01_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+	<summary>
+ フォーム_FormClosed
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.Timer1_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_Tick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.Timer2_Tick(System.Object,System.EventArgs)">
+	<summary>
+ ボール貸出機 タイマー2_Tick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnMain_Click(System.Object,System.EventArgs)">
+	<summary>
+ メニューボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnFRONT01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 受付画面ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnDRA01_Click(System.Object,System.EventArgs)">
+	<summary>
+ ドロワ管理ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnCARDINIT_Click(System.Object,System.EventArgs)">
+	<summary>
+ カード初期化ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnReRW_Click(System.Object,System.EventArgs)">
+	<summary>
+ RW再接続ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnNKNDISP01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入金処理ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnNKNDISP02_Click(System.Object,System.EventArgs)">
+	<summary>
+ ｻｰﾋﾞｽ入金処理ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnNKNDISP03_Click(System.Object,System.EventArgs)">
+	<summary>
+ カード支出ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnDREPODISP01_Click(System.Object,System.EventArgs)">
+	<summary>
+ ﾎﾟｲﾝﾄ還元ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnNAMELESS01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 名無しカード作成ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnFREECARD01_Click(System.Object,System.EventArgs)">
+	<summary>
+ ﾌﾘｰｶｰﾄﾞ作成ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnDCSTPTRN01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 停止中カードボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnHINDISP01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 商品引落し画面押下
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnCSSERCH02_Click(System.Object,System.EventArgs)">
+	<summary>
+ 顧客検索画面押下
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnCALMT01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 営業カレンダー登録ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnEIGMT01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 営業情報登録ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnEIGMT02_Click(System.Object,System.EventArgs)">
+	<summary>
+ 打ち放題情報登録ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnETPMT01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 月間来場ポイントマスタ登録ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnSYSMT01_Click(System.Object,System.EventArgs)">
+	<summary>
+ システム情報登録ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnKBMAST01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 顧客種別登録ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnCSMAST01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 顧客情報登録ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnEND_Click(System.Object,System.EventArgs)">
+	<summary>
+ 業務終了ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnNKNMT01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入金マスタ登録ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnNKNMT02_Click(System.Object,System.EventArgs)">
+	<summary>
+ サービス入金マスタ登録ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnNKNMT03_Click(System.Object,System.EventArgs)">
+	<summary>
+ カード支出マスタ登録ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnDREPOMST01_Click(System.Object,System.EventArgs)">
+	<summary>
+ ポイント還元マスタ登録ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnHINMT01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 商品マスタ登録
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnDTELOP01_Click(System.Object,System.EventArgs)">
+	<summary>
+ テロップ登録
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnPOINTMST01_Click(System.Object,System.EventArgs)">
+	<summary>
+ ポイントマスタ登録
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnSTAFFMT01_Click(System.Object,System.EventArgs)">
+	<summary>
+ スタッフ登録
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnPRGMT01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 画面セキュリティ登録
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnPRINT01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 顧客一覧/ラベルボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnPRINT02_Click(System.Object,System.EventArgs)">
+	<summary>
+ 打席管理ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnPRINT03_Click(System.Object,System.EventArgs)">
+	<summary>
+ 売上管理ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnPRINT04_Click(System.Object,System.EventArgs)">
+	<summary>
+ 時間帯別入場者情報ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnPRINT05_Click(System.Object,System.EventArgs)">
+	<summary>
+ 期間来場者分析ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnPRINT06_Click(System.Object,System.EventArgs)">
+	<summary>
+ 商品売上ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnPRINT07_Click(System.Object,System.EventArgs)">
+	<summary>
+ 推移表ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnPRINT08_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入金履歴ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnPRINT17_Click(System.Object,System.EventArgs)">
+	<summary>
+ コース料金精算履歴ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnPRINT10_Click(System.Object,System.EventArgs)">
+	<summary>
+ ﾎﾟｲﾝﾄ還元履歴ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnPRINT11_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入金額別情報ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnPRINT12_Click(System.Object,System.EventArgs)">
+	<summary>
+ カード再発行履歴ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnPRINT13_Click(System.Object,System.EventArgs)">
+	<summary>
+ 領収書発行履歴ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnPRINT16_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入場履歴ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnPRINT15_Click(System.Object,System.EventArgs)">
+	<summary>
+ 売上帳票ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnLKINHIST01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 残高クリア履歴ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnOpenDwa_Click(System.Object,System.EventArgs)">
+	<summary>
+ ドロアオープンボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.btnLock_Click(System.Object,System.EventArgs)">
+	<summary>
+ 画面ロックボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.GetSYSMTA">
+	<summary>
+ システム情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.InsCALMTA">
+	<summary>
+ カレンダーマスタ作成
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.ClrDENNO">
+	<summary>
+ 伝票番号クリア処理
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.ClrENTCNT2">
+	<summary>
+ 月間来場回数0クリア処理
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.ClrTIMTRA">
+	<summary>
+ 時間貸しトラン削除
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.InsSEATWORK">
+	<summary>
+ 打席情報ワーク作成
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.InsSEATSMA">
+	<summary>
+ 打席情報サマリA作成
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.InsSEATSMB">
+	<summary>
+ 打席情報サマリB作成
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.InsSEATSMC">
+	<summary>
+ 打席情報サマリC作成
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.GetRknInfo">
+	<summary>
+ 本日料金体系情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.GetKBMAST">
+	<summary>
+ 顧客種別情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.GetEIGMT">
+	<summary>
+ 営業情報マスタ取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.UpdPASSCD">
+	<summary>
+ パスワード更新
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.GetSUMBALL">
+	<summary>
+ 総打球数取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.GetSUMENTCNT">
+	<summary>
+ 来場者情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.GetBndCall">
+	<summary>
+ ﾍﾞﾝﾀﾞｰ呼び出し情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.PlayCallSound">
+	<summary>
+ 呼び出し開始処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMENU01.StopCallSound">
+	<summary>
+ 呼び出し停止処理
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NKNDISP01
+</name>
+</assembly>
+<members>
+<member name="F:GRAN29.UI.frmNKNDISP01._blnCardFLG">
+	<summary>
+ カード挿入済み確認フラグ【True】挿入済み
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmNKNDISP01.btnRePrint_Click(System.Object,System.EventArgs)">
+	<summary>
+ レシート再発行ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmNKNDISP01.btnCANCEL_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入金取消ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmNKNDISP01.btnNKNNM_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入金ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmNKNDISP01.btnUpDown_Click(System.Object,System.EventArgs)">
+	<summary>
+ 加算・減算ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmNKNDISP01.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmNKNDISP01.GetHINMTB">
+	<summary>
+ 商品分類マスタ情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmNKNDISP01.GetNKNMST">
+	<summary>
+ 入金マスタ情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmNKNDISP01.SetREGISTER(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean@,System.String@)">
+	<summary>
+ レジ精算画面
+ </summary>
+	<param name="intNKNKN">入金額</param>
+	<param name="intPREMKN">プレミアム</param>
+	<param name="intPOINT">ポイント</param>
+	<param name="intNKNTAX">消費税</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN29.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN29.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN29.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

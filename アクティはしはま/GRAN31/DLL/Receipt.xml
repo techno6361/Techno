@@ -1,0 +1,55 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Receipt
+</name>
+</assembly>
+<members>
+<member name="M:TMT90.Receipt.OpenDrawer(System.Boolean@,System.String@)">
+	<summary>
+ ドロワオープン
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TMT90.Receipt.RePrint(System.Boolean,System.String@)">
+	<summary>
+ レシート印刷
+ </summary>
+	<param name="strErrMsg">エラー内容</param>
+	<remarks></remarks>
+</member><member name="M:TMT90.Receipt.RyPrint(System.Boolean,System.String@)">
+	<summary>
+ 領収書印刷
+ </summary>
+	<param name="strErrMsg">エラー内容</param>
+	<remarks></remarks>
+</member><member name="M:TMT90.Receipt.MidB(System.String,System.Int32,System.Int32)">
+ -----------------------------------------------------------------------------------------
+ <summary>
+     文字列の指定されたバイト位置から、指定されたバイト数分の文字列を返します。</summary>
+	<param name="stTarget">
+     取り出す元になる文字列。</param>
+	<param name="iStart">
+     取り出しを開始する位置。</param>
+	<param name="iByteSize">
+     取り出すバイト数。</param>
+	<returns>
+     指定されたバイト位置から指定されたバイト数分の文字列。</returns>
+ -----------------------------------------------------------------------------------------
+
+</member><member name="P:TMT90.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:TMT90.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:TMT90.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FREECARD01
+</name>
+</assembly>
+<members>
+<member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:GRAN31.UI.frmFREECARD01.frmFREECARD01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFREECARD01.frmFREECARD01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFREECARD01.btnCard_Click(System.Object,System.EventArgs)">
+	<summary>
+ 作成ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFREECARD01.btnClear_Click(System.Object,System.EventArgs)">
+	<summary>
+ 残金クリアボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFREECARD01.func3">
+	<summary>
+ F3一覧ボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFREECARD01.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFREECARD01.GetKBMAST">
+	<summary>
+ 顧客種別情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFREECARD01.GetFREENOSEQ">
+	<summary>
+ ﾌﾘｰｶｰﾄﾞ番号取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFREECARD01.GetLESSCTRN">
+	<summary>
+ 本日作成枚数情報習得
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

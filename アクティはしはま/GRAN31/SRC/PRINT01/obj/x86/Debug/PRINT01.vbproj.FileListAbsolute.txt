@@ -1,0 +1,12 @@
+D:\GRAN29\DLL\PRINT01.exe
+D:\GRAN29\DLL\PRINT01.pdb
+D:\GRAN29\DLL\PRINT01.xml
+D:\GRAN29\SRC\PRINT01\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\GRAN29\SRC\PRINT01\obj\x86\Debug\GRAN29.UI.Resources.resources
+D:\GRAN29\SRC\PRINT01\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\GRAN29\SRC\PRINT01\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\GRAN29\SRC\PRINT01\obj\x86\Debug\PRINT01.exe
+D:\GRAN29\SRC\PRINT01\obj\x86\Debug\PRINT01.xml
+D:\GRAN29\SRC\PRINT01\obj\x86\Debug\PRINT01.pdb
+D:\GRAN29\SRC\PRINT01\obj\x86\Debug\GRAN29.UI.frmPRINT01.resources
+D:\GRAN29\SRC\PRINT01\obj\x86\Debug\PRINT01.vbproj.ResolveComReference.cache

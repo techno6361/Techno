@@ -1,0 +1,20 @@
+D:\GolfSchool\DLL\V31SerialPort.dll
+D:\GolfSchool\DLL\V31SerialPort.pdb
+D:\GolfSchool\DLL\V31SerialPort.xml
+C:\Documents and Settings\user\デスクトップ\V31SerialPort\V31SerialPort\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\user\デスクトップ\V31SerialPort\V31SerialPort\obj\Release\V31ABS.Resources.resources
+C:\Documents and Settings\user\デスクトップ\V31SerialPort\V31SerialPort\obj\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\user\デスクトップ\V31SerialPort\V31SerialPort\obj\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\user\デスクトップ\V31SerialPort\V31SerialPort\obj\Release\V31SerialPort.dll
+C:\Documents and Settings\user\デスクトップ\V31SerialPort\V31SerialPort\obj\Release\V31SerialPort.xml
+C:\Documents and Settings\user\デスクトップ\V31SerialPort\V31SerialPort\obj\Release\V31SerialPort.pdb
+C:\GolfSchool\V31SerialPort\V31SerialPort\obj\Release\ResolveAssemblyReference.cache
+C:\GolfSchool\V31SerialPort\V31SerialPort\obj\Release\V31ABS.Resources.resources
+C:\GolfSchool\V31SerialPort\V31SerialPort\obj\Release\GenerateResource.read.1.tlog
+C:\GolfSchool\V31SerialPort\V31SerialPort\obj\Release\GenerateResource.write.1.tlog
+C:\GolfSchool\V31SerialPort\V31SerialPort\obj\Release\V31SerialPort.dll
+C:\GolfSchool\V31SerialPort\V31SerialPort\obj\Release\V31SerialPort.xml
+C:\GolfSchool\V31SerialPort\V31SerialPort\obj\Release\V31SerialPort.pdb
+C:\GolfSchool\DLL\V31SerialPort.dll
+C:\GolfSchool\DLL\V31SerialPort.pdb
+C:\GolfSchool\DLL\V31SerialPort.xml

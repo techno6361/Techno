@@ -1,0 +1,132 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PRINT01
+</name>
+</assembly>
+<members>
+<member name="F:GRAN31.UI.frmPRINT01._txtNCSNO">
+	<summary>
+ 一覧から取得した顧客番号セットテキストボックス
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT01.frmPRINT01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT01.txtNCSNO_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 顧客番号テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT01.txtNCSNO_Enter(System.Object,System.EventArgs)">
+	<summary>
+ 顧客番号テキストボックス_Enter
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT01.txtBIRTHMM_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 誕生月テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT01.func3">
+	<summary>
+ F3一覧ボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT01.func11">
+	<summary>
+ F11クリアボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT01.func8">
+	<summary>
+ 印刷ボタン_Click
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT01.btnFind_Click(System.Object,System.EventArgs)">
+	<summary>
+ クリック_検索ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT01.dgvCSMAST_CellClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ 行選択でチェックボックスON/OFF
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT01.chkAll_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ チェックボックス_全チェック/全チェック外す
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT01.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT01.GetKBMAST">
+	<summary>
+ 顧客種別情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT01.GetCSMAST">
+	<summary>
+ 顧客情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT01.GetMaxCount">
+	<summary>
+ 最大件数の取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT01.SetSelectedTable(System.Data.DataTable@)">
+	<summary>
+ 選択中の行のみ出力対象にする
+ </summary>
+	<param name="dtCSMAST"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT01.ShowPrintMode">
+	<summary>
+ 印刷モードの描画
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.CSMAST_View">
+	<summary>
+ 検索結果のビュー
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

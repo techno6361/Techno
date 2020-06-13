@@ -1,0 +1,93 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DREPODISP01
+</name>
+</assembly>
+<members>
+<member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="F:GRAN31.UI.frmDREPODISP01.c_strPRGID">
+	<summary>
+ プログラムID
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmDREPODISP01._strSTFCODE">
+	<summary>
+ スタッフコード
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmDREPODISP01._strSTFNAME">
+	<summary>
+ スタッフ名
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDREPODISP01.btnRePrint_Click(System.Object,System.EventArgs)">
+	<summary>
+ レシート再発行ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDREPODISP01.btnCANCEL_Click(System.Object,System.EventArgs)">
+	<summary>
+ ｻｰﾋﾞｽ入金取消ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDREPODISP01.btnDREPONM_Click(System.Object,System.EventArgs)">
+	<summary>
+ 還元ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDREPODISP01.btnUpDown_Click(System.Object,System.EventArgs)">
+	<summary>
+ 精算ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDREPODISP01.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDREPODISP01.GetHINMTB">
+	<summary>
+ 商品分類マスタ情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDREPODISP01.GetDREPOMST">
+	<summary>
+ ﾎﾟｲﾝﾄ還元マスタ情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDREPODISP01.UpdREPOINT(System.Int32,System.String,System.Int32,System.Int32,System.Boolean@,System.String@)">
+	<summary>
+ 還元処理
+ </summary>
+	<param name="intKBN">【0】ﾌﾟﾚﾐｱﾑ【1】ﾁｹｯﾄ【2】ﾎﾟｲﾝﾄ修正 </param>
+	<param name="strREPONM"></param>
+	<param name="intPREMKN"></param>
+	<param name="intREPOINT"></param>
+	<param name="strMsg"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FEEHIST01
+</name>
+</assembly>
+<members>
+<member name="F:GRAN31.UI.frmFEEHIST01._blnCardFLG">
+	<summary>
+ カード挿入済み確認フラグ【True】挿入済み
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmFEEHIST01._dtFeeInfo">
+	<summary>
+ 年会費情報ﾃｰﾌﾞﾙ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmFEEHIST01._intPageNo">
+	<summary>
+ ページ数
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmFEEHIST01._intLastPageNo">
+	<summary>
+ 最終ページ数
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmFEEHIST01._intMaxRowCount">
+	<summary>
+ グリッド最大行数
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmFEEHIST01.MANNO">
+	<summary>
+ 顧客番号
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmFEEHIST01.CARDFLG">
+	<summary>
+ カードフラグ(挿入中か排出済みか)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFEEHIST01.frmFEEHIST01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFEEHIST01.frmFEEHIST01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFEEHIST01.frmFEEHIST01_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+	<summary>
+ フォーム_FormClosed
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFEEHIST01.cmbTerm_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ 期間コンボボックス
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFEEHIST01.txtNCSNO_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 顧客番号テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFEEHIST01.dgvFEEHIST_CellContentClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ グリッド_CellContentClick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFEEHIST01.btnSearch_Click(System.Object,System.EventArgs)">
+	<summary>
+ 検索ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFEEHIST01.btnNext_Click(System.Object,System.EventArgs)">
+	<summary>
+ 次ページボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFEEHIST01.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 前ページボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFEEHIST01.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFEEHIST01.GetKBMAST">
+	<summary>
+ 顧客種別情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmFEEHIST01.SetFeeInfo(System.Data.DataRow[])">
+	<summary>
+ 年会費情報グリッド表示
+ </summary>
+	<param name="dr"></param>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

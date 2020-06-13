@@ -1,0 +1,91 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+V31SerialPort
+</name>
+</assembly>
+<members>
+<member name="P:V31ABS.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:V31ABS.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:V31ABS.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:V31ABS.V31SerialPort.open(System.String)">
+	<summary>
+ ポートオープン
+ </summary>
+	<param name="strComPort">COMポート名</param>
+	<remarks></remarks>
+</member><member name="M:V31ABS.V31SerialPort.initialize(System.String,System.String@)">
+	<summary>
+ カードリーダ イニシャライズ
+ </summary>
+	<param name="strComPort">COMポート名</param>
+	<param name="strErrMsg">エラー内容</param>
+	<remarks></remarks>
+</member><member name="M:V31ABS.V31SerialPort.read(System.String,System.String,System.Int32,System.Int32@,System.String@,System.Boolean@,System.String@,System.Boolean,System.String,System.String,System.String@)">
+	<summary>
+ 磁気データ読み込み
+ </summary>
+	<param name="strShopNo">店番号(当センター)</param>
+	<param name="strCrdKbn">打席／スクールカード区分</param>
+	<param name="cstTimeOut">タイムアウト時間</param>
+	<param name="intTimeOut">タイマー</param>
+	<param name="strErrMsg">エラー内容</param>
+	<param name="isFirst">True:カード初期化時、False:左記以外</param>
+	<param name="strData">読み込み内容</param>
+	<param name="isDaseki">打席カードフラグ</param>
+	<param name="strDStrCNO">打席 開始・許可カード番号</param>
+	<param name="strDEndCNO">打席 終了・許可カード番号</param>
+	<param name="strRtnCrdKbn">打席／スクールカード区分</param>
+	<remarks>①店番号チェックあり
+          ②カード種別(打席／スクール)チェックあり</remarks>
+</member><member name="M:V31ABS.V31SerialPort.write(System.Byte[],System.String@)">
+	<summary>
+ 磁気データ書き込み
+ </summary>
+	<param name="bytData">書き込み内容</param>
+	<param name="strErrMsg">エラー内容</param>
+	<remarks></remarks>
+</member><member name="M:V31ABS.V31SerialPort.print(System.String[],System.Int32,System.String@)">
+	<summary>
+ 印字
+ </summary>
+	<param name="printData">印字内容</param>
+	<param name="maxPrintLine">印字可能MAX行数</param>
+	<param name="strErrMsg">エラー内容</param>
+	<remarks></remarks>
+</member><member name="M:V31ABS.V31SerialPort.eject(System.String@)">
+	<summary>
+ カード排出 
+ </summary>
+	<param name="strErrMsg">エラー内容</param>
+	<remarks></remarks>
+</member><member name="M:V31ABS.V31SerialPort.cancel(System.String@)">
+	<summary>
+ 発行命令キャンセル
+ </summary>
+	<param name="strErrMsg">エラー内容</param>
+	<remarks></remarks>
+</member><member name="M:V31ABS.V31SerialPort.close">
+	<summary>
+ ポートクローズ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:V31ABS.V31SerialPort.clearning(System.Int32,System.Int32@,System.String@)">
+	<summary>
+ リーダライタクリーニング
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

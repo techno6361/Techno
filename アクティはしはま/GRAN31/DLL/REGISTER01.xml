@@ -1,0 +1,196 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+REGISTER01
+</name>
+</assembly>
+<members>
+<member name="T:GRAN31.UI.GOODS_View">
+	<summary>
+ データグリッド表示用のビューモデル
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:GRAN31.UI.frmREGISTER01.Test">
+	<summary>
+ テストデータ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREGISTER01.frmETPMT01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREGISTER01.txtDEPOSIT_Enter(System.Object,System.EventArgs)">
+	<summary>
+ 現在の入力フィールドを取得
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREGISTER01.txtDEPOSIT_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+ テキストボックス_預かり金入力
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREGISTER01.btn1_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン_預かり金入力
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREGISTER01.chbCPAYKBN1_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ チェックボックス_単一選択
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREGISTER01.btnGETPREMKN_CLEAR_Click(System.Object,System.EventArgs)">
+	<summary>
+ Cボタン_各種ポイントの0クリア
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREGISTER01.btnSEISAN_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン_清算
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREGISTER01.btnRETURN_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン_戻る
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREGISTER01.btnF_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ ファンクションキー割り当て
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREGISTER01.CreateParams">
+	<summary>
+ 閉じるボタン無効可
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREGISTER01.Init">
+	<summary>
+ 画面初期化処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREGISTER01.ToCammaText(System.Windows.Forms.TextBox)">
+	<summary>
+ テキストボックスの内容をカンマ表示する
+ </summary>
+	<param name="txt"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREGISTER01.TextToInt(System.String)">
+	<summary>
+ 文字列の数値を整数型に変換する
+ </summary>
+	<param name="str"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREGISTER01.InputValue(System.Windows.Forms.TextBox@,System.String)">
+	<summary>
+ 先頭の0を削除してボタンの値をテキストボックスへ挿入
+ </summary>
+	<param name="value"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREGISTER01.Calc">
+	<summary>
+ 釣銭計算
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREGISTER01.GetCurrentTextBox">
+	<summary>
+ 現在フォーカス中のテキストボックスを取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREGISTER01.OnEnterTextBox(System.Windows.Forms.TextBox)">
+	<summary>
+ テキストボックス_Inフォーカス処理
+ </summary>
+	<param name="_txt"></param>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmConfirmation._intEndCnt">
+	<summary>
+ 画面終了カウント(10で終了)
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmConfirmation.Reply">
+	<summary>
+ 確認メッセージ返答
+ </summary>
+	<value>【OK】True【キャンセル】False</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmConfirmation.#ctor(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="Msg">メッセージ内容</param>
+	<param name="MsgType">【0】情報【1】確認【2】エラー【3】注意 </param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmConfirmation.AdjustButtonPosition">
+	<summary>
+ OKボタンの位置をダイアログの真ん中に表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmConfirmation.frmMSGBOX01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmConfirmation.btnOK_Click(System.Object,System.EventArgs)">
+	<summary>
+ OKボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmConfirmation.btnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ キャンセルボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmConfirmation.Timer1_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_Tick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

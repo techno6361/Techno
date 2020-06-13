@@ -1,0 +1,214 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Techno.DeviceControls.STR610Control
+</name>
+</assembly>
+<members>
+<member name="M:Techno.DeviceControls.STR610.Open(System.String)">
+	<summary>
+ ポートオープン
+ </summary>
+	<param name="strComPort"></param>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610.Close">
+	<summary>
+ ポートクローズ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610.Initialize">
+	<summary>
+ 初期化
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610.EjectCard(System.Int32)">
+	<summary>
+ カード排出コマンド(部分排出)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610.EjectCardFull">
+	<summary>
+ カード排出コマンド(完全排出)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610.GetStatus">
+	<summary>
+ ステータスの確認
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.#ctor">
+	<summary>
+ コンストラクタ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.IsOpen">
+	<summary>
+ ポートの解放状態の取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.Open(System.String)">
+	<summary>
+ ポートを開く
+ </summary>
+	<param name="strComPort"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.Close">
+	<summary>
+ ポートを閉じる
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.EjectCardFull">
+	<summary>
+ カード排出(完全排出)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.EjectCard(System.Int32)">
+	<summary>
+ カード排出(排出停止)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.GetUnitStatus">
+	<summary>
+ ユニットステータスの確認
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.GetSensorStatus">
+	<summary>
+ センサーステータスの確認
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.Initialize">
+	<summary>
+ 初期化
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.GetCount">
+	<summary>
+ 払出枚数カウント取得
+ 戻り値はResultを参照してください。
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.CountClear">
+	<summary>
+ 払出枚数カウントクリア
+ 戻り値はResultを参照してください。
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.GetVersion">
+	<summary>
+ バージョン取得
+ 戻り値はResultを参照してください。
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.GetCheckSum">
+	<summary>
+ チェックサム取得
+ 戻り値はResultを参照してください。
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.InitMessages">
+	<summary>
+ ローカル変数の初期化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.GetUnitStatusMessage">
+	<summary>
+ ユニットステータスの状態を文字列で取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.GetSensorStatusMessages">
+	<summary>
+ センサーステータスの状態を文字列のコレクションで取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.GetPayoutStatusMessage">
+	<summary>
+ カード排出後の状態を文字列で取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.GetCmdStatusMessage">
+	<summary>
+ コマンド実行時の状態を文字列で取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.GetFuncStatusMessage">
+	<summary>
+ 関数呼び出し状態を文字列で取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.GetErrorMessage">
+	<summary>
+ エラーメッセージの取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.GetErrorMessage(System.Int32)">
+	<summary>
+ エラーメッセージの取得
+ </summary>
+	<param name="error_code"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.GetErrorMessage(Techno.DeviceControls.STR610Control.SENSOR_STATUS)">
+	<summary>
+ エラーメッセージの取得
+ </summary>
+	<param name="error_code"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.GetErrorMessage(Techno.DeviceControls.STR610Control.UNIT_STATUS)">
+	<summary>
+ エラーメッセージの取得
+ </summary>
+	<param name="error_code"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.GetErrorMessage(Techno.DeviceControls.STR610Control.PAYOUT_STATUS)">
+	<summary>
+ エラーメッセージの取得
+ </summary>
+	<param name="error_code"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.STR610Control.GetErrorMessage(Techno.DeviceControls.STR610Control.CMD_STATUS)">
+	<summary>
+ エラーメッセージの取得
+ </summary>
+	<param name="error_code"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Techno.DeviceControls.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:Techno.DeviceControls.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:Techno.DeviceControls.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

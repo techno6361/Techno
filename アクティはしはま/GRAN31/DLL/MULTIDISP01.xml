@@ -1,0 +1,121 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MULTIDISP01
+</name>
+</assembly>
+<members>
+<member name="M:GRAN31.UI.frmMULTIDISP01.frmMULTIDISP02_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ フォーム_MouseMove
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMULTIDISP01.btnSeat_Click(System.Object,System.EventArgs)">
+	<summary>
+ 打席押下
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMULTIDISP01.tmSeats_Tick(System.Object,System.EventArgs)">
+	<summary>
+ 打席監視タイマー
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMULTIDISP01.tmTelop_Tick(System.Object,System.EventArgs)">
+	<summary>
+ 電光掲示板の表示タイマー
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMULTIDISP01.DrawSeats(GRAN31.UI.FloorSettings,System.Int32)">
+	<summary>
+ 打席を描画する
+ </summary>
+	<param name="s"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMULTIDISP01.GetSeatState(System.Int32)">
+	<summary>
+ シートの状態を調べる
+ </summary>
+	<param name="i"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMULTIDISP01.ChangeSeatLamp(GRAN31.UI.CntSeat01@,GRAN31.UI.CntSeat01.LampType)">
+	<summary>
+ ランプを変更
+ </summary>
+	<param name="seat"></param>
+	<param name="state"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMULTIDISP01.SetTelopStartPosition">
+	<summary>
+ 電光掲示板のメッセージの位置設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMULTIDISP01.Seats_Tick">
+	<summary>
+ 打席監視のタイマー処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMULTIDISP01.Telop_Tick">
+	<summary>
+ テロップのタイマー処理
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.frmMULTIDISP01">
+	<summary>
+ 単独アプリバージョン
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.CntSeat01.eLeftSeatType">
+	<summary>
+ 左右兼用打席の画像タイプ(定義)
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.CntSeat01.LeftSeatType">
+	<summary>
+ 左右兼用打席の画像タイプ
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.CntSeat01.SchoolSeat">
+	<summary>
+ スクール専用打席の設定
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CntSeat01.tmLamp_Tick(System.Object,System.EventArgs)">
+	<summary>
+ ランプの点滅
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CntSeat01.RunLamp">
+	<summary>
+ ランプの点滅
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

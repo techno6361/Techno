@@ -1,0 +1,93 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LKINDISP01
+</name>
+</assembly>
+<members>
+<member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="P:GRAN31.UI.frmLKINDISP01.ZANKN">
+	<summary>
+ 残金
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmLKINDISP01.PREZANKN">
+	<summary>
+ P)残金
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmLKINDISP01.SRTPO">
+	<summary>
+ 残ポイント
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmLKINDISP01.CARDLIMIT">
+	<summary>
+ カード有効期限
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmLKINDISP01.PREMLIMIT">
+	<summary>
+ 入金残高有効期限
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmLKINDISP01.CLRKBN">
+	<summary>
+ クリア区分
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmLKINDISP01.Reply">
+	<summary>
+ 確認メッセージ返答
+ </summary>
+	<value>【OK】True【キャンセル】False</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmLKINDISP01.frmLKINDISP01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmLKINDISP01.btnOK_Click(System.Object,System.EventArgs)">
+	<summary>
+ OKボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmLKINDISP01.btnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ キャンセルボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmLKINDISP01.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

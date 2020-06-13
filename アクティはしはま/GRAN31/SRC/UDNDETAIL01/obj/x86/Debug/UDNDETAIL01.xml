@@ -1,0 +1,58 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+UDNDETAIL01
+</name>
+</assembly>
+<members>
+<member name="M:GRAN29.UI.frmUDNDETAIL01.frmDRA01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmUDNDETAIL01.btnRETURN_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン_戻る
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmUDNDETAIL01.Start">
+	<summary>
+ メイン開始処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmUDNDETAIL01.Test">
+	<summary>
+ テスト用
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmUDNDETAIL01.Init">
+	<summary>
+ 画面初期化処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmUDNDETAIL01.GetUDNDETAIL">
+	<summary>
+ 売り上げ情報を取得しグリッドに一覧表示
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN29.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN29.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN29.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

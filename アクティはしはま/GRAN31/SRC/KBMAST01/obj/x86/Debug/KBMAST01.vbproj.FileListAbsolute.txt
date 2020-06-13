@@ -1,0 +1,11 @@
+D:\GRAN29\DLL\KBMAST01.exe
+D:\GRAN29\DLL\KBMAST01.pdb
+D:\GRAN29\DLL\KBMAST01.xml
+D:\GRAN29\SRC\KBMAST01\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\GRAN29\SRC\KBMAST01\obj\x86\Debug\GRAN29.UI.Resources.resources
+D:\GRAN29\SRC\KBMAST01\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\GRAN29\SRC\KBMAST01\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\GRAN29\SRC\KBMAST01\obj\x86\Debug\KBMAST01.exe
+D:\GRAN29\SRC\KBMAST01\obj\x86\Debug\KBMAST01.xml
+D:\GRAN29\SRC\KBMAST01\obj\x86\Debug\KBMAST01.pdb
+D:\GRAN29\SRC\KBMAST01\obj\x86\Debug\GRAN29.UI.frmKBMAST01.resources

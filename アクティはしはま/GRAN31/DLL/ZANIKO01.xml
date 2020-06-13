@@ -1,0 +1,194 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ZANIKO01
+</name>
+</assembly>
+<members>
+<member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="F:GRAN31.UI.frmZANIKO01.c_strPRGID">
+	<summary>
+ プログラムID
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmZANIKO01._blnPreCard">
+	<summary>
+ ﾌﾟﾘﾍﾟｲﾄﾞｶｰﾄﾞフラグ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmZANIKO01._intUseKINGAKU">
+	<summary>
+ 更新球数
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmZANIKO01._intPayBallZANKN">
+	<summary>
+ 支払金額
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmZANIKO01._intPayBallPREMKN">
+	<summary>
+ 支払プレミアム
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmZANIKO01._blnClrFlg">
+	<summary>
+ 加算情報クリアフラグ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmZANIKO01._strSTFCODE">
+	<summary>
+ スタッフコード
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmZANIKO01._strSTFNAME">
+	<summary>
+ スタッフ名
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmZANIKO01.PreKingaku">
+	<summary>
+ プリペイド移行金額保持
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.frmZANIKO01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.frmZANIKO01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.frmFRONT01_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+	<summary>
+ フォーム_FormClosed
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.chkHakko_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 移行金額から発行料の精算を行うチェックボックス_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.chkRECEIPT_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ レシートを出力するチェックボックス_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.btnIKOHIST01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 移行履歴ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.Button1_Click(System.Object,System.EventArgs)">
+	<summary>
+ クリアボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.btnPreCard1_Click(System.Object,System.EventArgs)">
+	<summary>
+ 移行元ﾌﾟﾘﾍﾟｲﾄﾞカード挿入ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.btnCard1_Click(System.Object,System.EventArgs)">
+	<summary>
+ 移行元カード挿入ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.btnCard2_Click(System.Object,System.EventArgs)">
+	<summary>
+ 移行先カード挿入ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.btnEject1_Click(System.Object,System.EventArgs)">
+	<summary>
+ 移行元カード排出ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.btnEject2_Click(System.Object,System.EventArgs)">
+	<summary>
+ 移行先カード排出ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.func1">
+	<summary>
+ 終了ボタン
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.GetHakkoInfo">
+	<summary>
+ カード発行料情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.GetCSMAST">
+	<summary>
+ 顧客情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.UpdKINSMA(System.Int32)">
+	<summary>
+ 金額サマリ・ﾎﾟｲﾝﾄｻﾏﾘ更新
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.UpdIKOTRN(System.Int32)">
+	<summary>
+ 残高移行データ登録
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmZANIKO01.UpdURIAGE">
+	<summary>
+ 売上データ登録
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

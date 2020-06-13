@@ -1,0 +1,212 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+REQUESTCARD
+</name>
+</assembly>
+<members>
+<member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="F:GRAN31.UI.frmREQUESTCARD._dcICR700">
+	<summary>
+ ICR700リーダライターICR700制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmREQUESTCARD._dcIA240">
+	<summary>
+ KU-A201リーダライターIA240制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmREQUESTCARD.Command_Type.CARDINIT">
+	<summary>
+ カード初期化
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmREQUESTCARD.Command_Type.READ">
+	<summary>
+ カードリード
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmREQUESTCARD.Command_Type.WRITE">
+	<summary>
+ カードライト
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmREQUESTCARD.Command_Type.EJECT">
+	<summary>
+ カード排出
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmREQUESTCARD.Command_Type.PREREAD">
+	<summary>
+ プリペイドカードリード
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmREQUESTCARD.Command_Type.PREWRITE">
+	<summary>
+ プリペイドカードライト
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmREQUESTCARD.Command_Type.REPAIR">
+	<summary>
+ ｶｰﾄﾞ修復
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.frmREQUESTCARD.Command_Type">
+	<summary>
+ コマンド選択プロパティ列挙体
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmREQUESTCARD._dcICR700Bak">
+	<summary>
+ バックアップ用
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmREQUESTCARD._iDatabase">
+	<summary>
+ DB更新用
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREQUESTCARD.COMMAND">
+	<summary>
+ コマンド指定
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREQUESTCARD.EJECTSTOP">
+	<summary>
+ プリカRW内からカードを排出しない【True】しない【False】する
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREQUESTCARD.ERRFLG">
+	<summary>
+ エラーフラグ【True】エラー有り
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREQUESTCARD.ERRRWKBN">
+	<summary>
+ PreRwエラーフラグ
+ 【1】PreRwでエラー【2】V31Rwでエラー
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREQUESTCARD.ERRSKIPV31">
+	<summary>
+ リライトＲＷﾘｰﾄﾞｴﾗｰ無視
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREQUESTCARD.ERRSHOPFLG">
+	<summary>
+ 店番エラーフラグ【True】エラー
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREQUESTCARD.CANCEL">
+	<summary>
+ 取消確認【True】取消 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREQUESTCARD.REQUEST_SKIP">
+	<summary>
+ 読み取り、書き込み時のカード要求をスキップ
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARD.frmREQUESTCARD_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARD.InitRWUnit">
+	<summary>
+ カードユニットの初期化/起動テスト
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARD.frmREQUESTCARD_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARD.btnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ 取消ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARD.timPreRead_Tick(System.Object,System.EventArgs)">
+	<summary>
+ プリペイドカードリードタイマー_Tick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARD.ResetAllUnit">
+	<summary>
+ 各ユニットのリセット
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARD.ErrDisp(System.String)">
+	<summary>
+ エラー時のメッセージ表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARD.ErrWriteDisp(System.String)">
+	<summary>
+ 書き込みエラー時のメッセージ表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARD.CardInit">
+	<summary>
+ カード初期化処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARD.CardRead(System.Int32)">
+	<summary>
+ カード読込処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARD.CardWrite(System.Int32)">
+	<summary>
+ カード書き込み処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARD.PreCardWrite">
+	<summary>
+ プリペイドカード書き込み処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARD.CardEject_Wait">
+	<summary>
+ カード排出処理
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

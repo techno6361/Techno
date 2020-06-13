@@ -1,0 +1,78 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+POINTMST01
+</name>
+</assembly>
+<members>
+<member name="M:GRAN31.UI.frmPOINTMST01.frmPOINTMST01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPOINTMST01.dgvPOINTMST_EditingControlShowing(System.Object,System.Windows.Forms.DataGridViewEditingControlShowingEventArgs)">
+	<summary>
+ グリッド_EditingControlShowing
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPOINTMST01.dgvPOINTMST_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ グリッド_KeyPress
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPOINTMST01.dgvPOINTMST_CellFormatting(System.Object,System.Windows.Forms.DataGridViewCellFormattingEventArgs)">
+	<summary>
+ グリッド_CellFormatting
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPOINTMST01.func11">
+	<summary>
+ F11クリアボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPOINTMST01.func12">
+	<summary>
+ F12登録ボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPOINTMST01.Init">
+	<summary>
+ 画面初期表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPOINTMST01.GetPOINT">
+	<summary>
+ ポイントマスタ情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPOINTMST01.Register">
+	<summary>
+ 登録処理
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

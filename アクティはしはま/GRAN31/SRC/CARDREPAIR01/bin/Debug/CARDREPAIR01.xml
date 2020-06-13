@@ -1,0 +1,63 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CARDREPAIR01
+</name>
+</assembly>
+<members>
+<member name="F:GRAN29.UI.frmCARDREPAIR01._dtCSMAST">
+	<summary>
+ 顧客情報
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmCARDREPAIR01.frmCARDREPAIR01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmCARDREPAIR01.frmCARDREPAIR01_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+	<summary>
+ フォーム_Closed
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmCARDREPAIR01.btnCard_Click(System.Object,System.EventArgs)">
+	<summary>
+ カード挿入・修復ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmCARDREPAIR01.GetCardInfo(System.Boolean@)">
+	<summary>
+ カード情報取得
+ </summary>
+	<param name="blnCard"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmCARDREPAIR01.Repair">
+	<summary>
+ カード修復
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN29.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN29.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN29.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

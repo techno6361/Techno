@@ -1,0 +1,85 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DTELOP01
+</name>
+</assembly>
+<members>
+<member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:GRAN31.UI.frmDTELOP01.frmDTELOP01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDTELOP01.btnOK_Click(System.Object,System.EventArgs)">
+	<summary>
+ 登録ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDTELOP01.btnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ キャンセルボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDTELOP01.frmDTELOP01_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ キーバインド
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDTELOP01.Start">
+	<summary>
+ 開始処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDTELOP01.Init">
+	<summary>
+ 表示初期化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDTELOP01.GetDTELOP">
+	<summary>
+ DTELOPマスタを取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDTELOP01.updateDTELOP">
+	<summary>
+ DTELOPの更新処理
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDTELOP01.ChkUPDDTM">
+	<summary>
+ 他端末からの更新チェック
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDTELOP01.GetCurrentUPDDTM">
+	<summary>
+ 現在の最新更新日時を取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

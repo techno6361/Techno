@@ -1,0 +1,210 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+REQUESTCARD
+</name>
+</assembly>
+<members>
+<member name="F:GRAN29.UI.frmREQUESTCARD._dcIA240">
+	<summary>
+ KU-A201リーダライターIA240制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN29.UI.frmREQUESTCARD._dcABSV31">
+	<summary>
+ ABS-V31リーダライター制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN29.UI.frmREQUESTCARD.Command_Type.CARDINIT">
+	<summary>
+ カード初期化
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN29.UI.frmREQUESTCARD.Command_Type.READ">
+	<summary>
+ カードリード
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN29.UI.frmREQUESTCARD.Command_Type.WRITE">
+	<summary>
+ カードライト
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN29.UI.frmREQUESTCARD.Command_Type.EJECT">
+	<summary>
+ カード排出
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN29.UI.frmREQUESTCARD.Command_Type.PREREAD">
+	<summary>
+ プリペイドカードリード
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN29.UI.frmREQUESTCARD.Command_Type.PREWRITE">
+	<summary>
+ プリペイドカードライト
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN29.UI.frmREQUESTCARD.Command_Type.PREEJECT">
+	<summary>
+ プリペイドカード排出
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN29.UI.frmREQUESTCARD.Command_Type.REPAIR">
+	<summary>
+ ｶｰﾄﾞ修復
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN29.UI.frmREQUESTCARD.Command_Type.CLEANING">
+	<summary>
+ クリーニング
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN29.UI.frmREQUESTCARD.Command_Type">
+	<summary>
+ コマンド選択プロパティ列挙体
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN29.UI.frmREQUESTCARD.COMMAND">
+	<summary>
+ コマンド指定
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN29.UI.frmREQUESTCARD.CHECKIN">
+	<summary>
+ ﾁｪｯｸｲﾝ処理かどうか【True】ﾁｪｯｸｲﾝ
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN29.UI.frmREQUESTCARD.CHECKOUT">
+	<summary>
+ ﾁｪｯｸｱｳﾄ処理かどうか【True】ﾁｪｯｸｱｳﾄ
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN29.UI.frmREQUESTCARD.EJECTSTOP">
+	<summary>
+ プリカRW内からカードを排出しない【True】しない【False】する
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN29.UI.frmREQUESTCARD.ERRFLG">
+	<summary>
+ エラーフラグ【True】エラー有り
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN29.UI.frmREQUESTCARD.ERRSHOPFLG">
+	<summary>
+ 店番エラーフラグ【True】エラー
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN29.UI.frmREQUESTCARD.CANCEL">
+	<summary>
+ 取消確認【True】取消 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmREQUESTCARD.frmREQUESTCARD_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmREQUESTCARD.frmREQUESTCARD_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmREQUESTCARD.btnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ 取消ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmREQUESTCARD.timCardInit_Tick(System.Object,System.EventArgs)">
+	<summary>
+ カード初期化処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmREQUESTCARD.timRead_Tick(System.Object,System.EventArgs)">
+	<summary>
+ カードリードタイマー_Tick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmREQUESTCARD.timPreRead_Tick(System.Object,System.EventArgs)">
+	<summary>
+ プリペイドカードリードタイマー_Tick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmREQUESTCARD.timCLEANING_Tick(System.Object,System.EventArgs)">
+	<summary>
+ クリーニングタイマー
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmREQUESTCARD.timRePair_Tick(System.Object,System.EventArgs)">
+	<summary>
+ ｶｰﾄﾞ修復リードタイマー
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmREQUESTCARD.ErrDisp(System.String)">
+	<summary>
+ エラー時のメッセージ表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmREQUESTCARD.CardWrite">
+	<summary>
+ カード書き込み処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmREQUESTCARD.PreCardWrite">
+	<summary>
+ プリペイドカード書き込み処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmREQUESTCARD.CardEject">
+	<summary>
+ カード排出処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmREQUESTCARD.PreCardEject">
+	<summary>
+ プリペイドカード排出処理
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN29.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN29.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN29.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

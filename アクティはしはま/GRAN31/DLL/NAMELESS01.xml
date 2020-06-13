@@ -1,0 +1,135 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NAMELESS01
+</name>
+</assembly>
+<members>
+<member name="F:GRAN31.UI.frmNAMELESS01._dtKBMAST">
+	<summary>
+ 顧客種別情報
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmNAMELESS01.FormClose">
+	<summary>
+ 処理後フォームを閉じるかどうか
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS01.frmNAMELESS01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS01.frmNAMELESS01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS01.cmbNCSRANK_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ 顧客種別コンボボックス_SelectedIndexChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS01.txtNCSNO_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ 顧客番号テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS01.txtNCSNO_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 顧客番号テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS01.txtBox_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ テキストボックス_KeyPress
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS01.txtDMEMBER_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 会員期限テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS01.btnCard_Click(System.Object,System.EventArgs)">
+	<summary>
+ 作成ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS01.func3">
+	<summary>
+ F3一覧ボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS01.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS01.GetKBMAST">
+	<summary>
+ 顧客種別情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS01.ChkMANNOSEQ(System.Int32)">
+	<summary>
+ 顧客番号登録済みかどうかチェック
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS01.GetMANNOSEQ">
+	<summary>
+ 顧客番号取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS01.GetCSMAST">
+	<summary>
+ 顧客情報確認
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS01.InsSEQTRN(System.Int32)">
+	<summary>
+ 顧客番号更新
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS01.InsRegister">
+	<summary>
+ 新規登録
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

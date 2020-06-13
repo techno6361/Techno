@@ -1,0 +1,85 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NKNMST02
+</name>
+</assembly>
+<members>
+<member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="F:GRAN31.UI.frmNKNMST02._dtHINMTB">
+	<summary>
+ 商品分類マスタ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmNKNMST02._dtUPDDTM">
+	<summary>
+ 画面表示時の最新の更新日時
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNMST02.frmNKNMST02_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNMST02.frmNKNMST02_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+	<summary>
+ フォーム_Closed
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNMST02.func11">
+	<summary>
+ F11クリアボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNMST02.func12">
+	<summary>
+ F12登録ボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNMST02.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNMST02.GetHINMTB">
+	<summary>
+ 商品分類マスタ情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNMST02.GetNKNMST">
+	<summary>
+ 入金マスタ情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNMST02.CheckRegister(System.String@)">
+	<summary>
+ 登録データチェック
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNMST02.Register">
+	<summary>
+ 登録処理
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

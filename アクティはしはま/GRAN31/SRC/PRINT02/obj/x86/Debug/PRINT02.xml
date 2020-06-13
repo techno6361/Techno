@@ -1,0 +1,67 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PRINT02
+</name>
+</assembly>
+<members>
+<member name="M:GRAN29.UI.frmPRINT02.frmPRINT02_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmPRINT02.cmbTerm_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ 期間コンボボックス
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmPRINT02.btnSearch_Click(System.Object,System.EventArgs)">
+	<summary>
+ 検索ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmPRINT02.func8">
+	<summary>
+ 印刷ボタン_Click
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmPRINT02.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmPRINT02.ToHalfAdjust(System.Double,System.Int32)">
+ ------------------------------------------------------------------------
+ <summary>
+     指定した精度の数値に四捨五入します。</summary>
+	<param name="dValue">
+     丸め対象の倍精度浮動小数点数。</param>
+	<param name="iDigits">
+     戻り値の有効桁数の精度。</param>
+	<returns>
+     iDigits に等しい精度の数値に四捨五入された数値。</returns>
+ ------------------------------------------------------------------------
+
+</member><member name="P:GRAN29.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN29.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN29.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

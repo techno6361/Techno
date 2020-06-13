@@ -1,0 +1,197 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EIGMT03
+</name>
+</assembly>
+<members>
+<member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="F:GRAN31.UI.frmEIGMT03._intRKNKB">
+	<summary>
+ 選択中の料金体系
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmEIGMT03._intFLRKB">
+	<summary>
+ 選択中のフロア数
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.frmEIGMT03_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.rdoRKNKB_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 料金体系ラジオボタン_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.rdoFLRKB_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ フロアラジオボタン_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.btnCopy_Click(System.Object,System.EventArgs)">
+	<summary>
+ コピーボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.cmbKBMAST_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ 顧客種別コンボボックス_SelectedIndexChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.txtTIMENM_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 時間帯テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.txtPASSCD_Validated(System.Object,System.EventArgs)">
+	<summary>
+ パスワードテキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.txtENTKIN_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 入場料テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.txtPOINT_Validated(System.Object,System.EventArgs)">
+	<summary>
+ ポイントテキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.txtBALLSU_Validated(System.Object,System.EventArgs)">
+	<summary>
+ ボール数テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.txtKAGOKN_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 単価テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.txtKAGOZEI_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 消費税テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.txtBox_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ テキストボックス_KeyPress
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.txtBox_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ テキストボックス_MouseDown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.txtBox_Enter(System.Object,System.EventArgs)">
+	<summary>
+ テキストボックス_Enter
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.func11">
+	<summary>
+ F11クリアボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.func12">
+	<summary>
+ F12登録ボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.Init">
+	<summary>
+ 画面初期表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.ClrText">
+	<summary>
+ テキストクリア
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.CheckRegister(System.String@)">
+	<summary>
+ 登録データチェック
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.GetRKNMTA">
+	<summary>
+ 料金体系マスタ情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.GetKBMAST">
+	<summary>
+ 顧客種別情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.GetCopyKBMAST">
+	<summary>
+ コピー元顧客種別情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.GetNkbEIGMTC(System.Boolean)">
+	<summary>
+ 営業情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.GetTimeKbInfo">
+	<summary>
+ 2階以上の営業情報がない場合1階の時間帯情報を参照表示
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT03.Register">
+	<summary>
+ 登録処理
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

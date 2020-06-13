@@ -1,0 +1,107 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CSSEARCH01
+</name>
+</assembly>
+<members>
+<member name="P:GRAN31.UI.frmCSSEARCH01.GetNCSNO">
+	<summary>
+ 検索顧客番号取得
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSSEARCH01.frmCSSEARCH01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSSEARCH01.dgvCSMAST_DoubleClick(System.Object,System.EventArgs)">
+	<summary>
+ 顧客グリッド_DoubleClick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSSEARCH01.txtNCSNO_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 顧客番号テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSSEARCH01.txtMEMBERNO_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 会員番号テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSSEARCH01.txtYYYMMDD_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 日付テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSSEARCH01.txtBox_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ テキストボックス_KeyPress
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSSEARCH01.chkCard_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ カード未発行チェックボックス_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSSEARCH01.chkCard2_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ カード発行済みチェックボックス_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSSEARCH01.func3">
+	<summary>
+ F3検索ボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSSEARCH01.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSSEARCH01.GetKBMAST">
+	<summary>
+ 顧客種別情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCSSEARCH01.GetCSMAST">
+	<summary>
+ 顧客情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

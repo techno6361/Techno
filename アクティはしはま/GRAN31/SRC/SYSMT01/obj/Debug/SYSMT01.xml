@@ -1,0 +1,123 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SYSMT01
+</name>
+</assembly>
+<members>
+<member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="P:GRAN31.UI.frmSYSMT01.SEFLG">
+	<summary>
+ SEフラグ
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMT01.frmSYSMT01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMT01.txtTAX_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 消費税テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMT01.txtSEATSU_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 全打席数テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMT01.txtFLRSU_Validated(System.Object,System.EventArgs)">
+	<summary>
+ フロア数テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMT01.txtZANMAX_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 入金限度額
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMT01.txtBox_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ テキストボックス_KeyPress
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMT01.btnRepoClear_Click(System.Object,System.EventArgs)">
+	<summary>
+ 帳票クリアボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMT01.func11">
+	<summary>
+ F11クリアボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMT01.func12">
+	<summary>
+ F12登録ボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMT01.Init">
+	<summary>
+ 画面初期表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMT01.SetConfigInfo">
+	<summary>
+ コンフィグ情報表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMT01.UpdConfigInfo">
+	<summary>
+ コンフィグ情報更新
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMT01.GetSYSMTA">
+	<summary>
+ システム情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMT01.CheckRegister(System.String@)">
+	<summary>
+ 登録データチェック
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMT01.UpdRegister">
+	<summary>
+ 更新登録
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

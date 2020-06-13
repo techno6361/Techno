@@ -1,0 +1,108 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SEATINFO01
+</name>
+</assembly>
+<members>
+<member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="F:GRAN31.UI.frmSEATINFO01._dtSEATRSV">
+	<summary>
+ 予約状況テーブル
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSEATINFO01._cintSeatPosition">
+	<summary>
+ 打席開始位置【0】左から【1】右から
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSEATINFO01.Mode_Type.NORMAL">
+	<summary>
+ 通常
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSEATINFO01.Mode_Type.CHOICE">
+	<summary>
+ 打席選択
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.frmSEATINFO01.Mode_Type">
+	<summary>
+ モード選択プロパティ列挙体
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSEATINFO01.SELECTSEAT">
+	<summary>
+ 選択打席
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSEATINFO01.MODE">
+	<summary>
+ コマンド指定
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATINFO01.frmSEATINFO01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATINFO01.frmSEATINFO01_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+	<summary>
+ フォーム_FormClosed
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATINFO01.Timer1_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_Tick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATINFO01.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATINFO01.GetSEATRSV">
+	<summary>
+ 打席予約状況取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATINFO01.UpdSEATRSV(System.Int32,System.Int32)">
+	<summary>
+ 打席予約情報更新処理
+ </summary>
+	<param name="intRSVKBN"></param>
+	<param name="intSEATNO"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATINFO01.SetSeatInfo">
+	<summary>
+ 打席使用状況取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

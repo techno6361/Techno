@@ -1,0 +1,35 @@
+D:\GolfSchool\DLL\Receipt.dll
+D:\GolfSchool\DLL\Receipt.pdb
+D:\GolfSchool\DLL\Receipt.xml
+C:\Documents and Settings\user\デスクトップ\Receipt\Receipt\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\user\デスクトップ\Receipt\Receipt\obj\Release\TMT90.Resources.resources
+C:\Documents and Settings\user\デスクトップ\Receipt\Receipt\obj\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\user\デスクトップ\Receipt\Receipt\obj\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\user\デスクトップ\Receipt\Receipt\obj\Release\Receipt.dll
+C:\Documents and Settings\user\デスクトップ\Receipt\Receipt\obj\Release\Receipt.xml
+C:\Documents and Settings\user\デスクトップ\Receipt\Receipt\obj\Release\Receipt.pdb
+D:\GolfSchool\Receipt\Receipt\obj\Release\ResolveAssemblyReference.cache
+D:\GolfSchool\Receipt\Receipt\obj\Release\TMT90.Resources.resources
+D:\GolfSchool\Receipt\Receipt\obj\Release\GenerateResource.read.1.tlog
+D:\GolfSchool\Receipt\Receipt\obj\Release\GenerateResource.write.1.tlog
+D:\GolfSchool\Receipt\Receipt\obj\Release\Receipt.dll
+D:\GolfSchool\Receipt\Receipt\obj\Release\Receipt.xml
+D:\GolfSchool\Receipt\Receipt\obj\Release\Receipt.pdb
+D:\GRAN29\DLL\Receipt.dll
+D:\GRAN29\DLL\Receipt.pdb
+D:\GRAN29\DLL\Receipt.xml
+D:\GRAN29\Receipt\Receipt\obj\Release\TMT90.Resources.resources
+D:\GRAN29\Receipt\Receipt\obj\Release\Receipt.dll
+D:\GRAN29\Receipt\Receipt\obj\Release\Receipt.xml
+D:\GRAN29\Receipt\Receipt\obj\Release\Receipt.pdb
+D:\GRAN29\Receipt\Receipt\obj\Release\Receipt.vbprojResolveAssemblyReference.cache
+D:\GRAN29\Receipt\Receipt\obj\Release\Receipt.vbproj.GenerateResource.Cache
+D:\GRAN31\DLL\Receipt.dll
+D:\GRAN31\DLL\Receipt.pdb
+D:\GRAN31\DLL\Receipt.xml
+D:\GRAN31\Receipt\Receipt\obj\Release\Receipt.vbprojResolveAssemblyReference.cache
+D:\GRAN31\Receipt\Receipt\obj\Release\TMT90.Resources.resources
+D:\GRAN31\Receipt\Receipt\obj\Release\Receipt.vbproj.GenerateResource.Cache
+D:\GRAN31\Receipt\Receipt\obj\Release\Receipt.dll
+D:\GRAN31\Receipt\Receipt\obj\Release\Receipt.xml
+D:\GRAN31\Receipt\Receipt\obj\Release\Receipt.pdb

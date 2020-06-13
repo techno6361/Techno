@@ -1,0 +1,246 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Techno.DeviceControls.SK121Control
+</name>
+</assembly>
+<members>
+<member name="T:Techno.DeviceControls.PaymentHistoryModel">
+	<summary>
+ 入金履歴モデル
+ </summary>
+</member><member name="T:Techno.DeviceControls.Publisher">
+	<summary>
+ 発行者クラス
+ </summary>
+</member><member name="P:Techno.DeviceControls.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:Techno.DeviceControls.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:Techno.DeviceControls.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:Techno.DeviceControls.SK121.Open(System.String)">
+	<summary>
+ ポートオープン
+ </summary>
+	<param name="strComPort"></param>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121.Close">
+	<summary>
+ ポートクローズ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121.PrintReceipt">
+	<summary>
+ レシート発行コマンド
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121.PrintReport">
+	<summary>
+ 売上日報発行コマンド
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121.GetPrintStatus">
+	<summary>
+ プリンタステータスの確認
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121.Reset">
+	<summary>
+ ソフトウェアリセット
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.#ctor">
+	<summary>
+ コンストラクタ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.IsOpen">
+	<summary>
+ ポートが開いているかを取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.Open(System.String)">
+	<summary>
+ ポートを開く
+ </summary>
+	<param name="strComPort"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.Close">
+	<summary>
+ ポートを閉じる
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.PrintReceipt">
+	<summary>
+ レシート発行コマンド
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.PrintReport">
+	<summary>
+ 売上日報発行コマンド
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.Reset">
+	<summary>
+ ソフトウェアリセット
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.GetErrorMessage(Techno.DeviceControls.SK121Control.ErrorType)">
+	<summary>
+ エラーコードに基づいたエラーメッセージを取得する
+ </summary>
+	<param name="error_code"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.GetPrintStatus">
+	<summary>
+ リアルタイムステータスの取得
+ リアルタイム中は用紙切れ以外のエラーを検出可能
+ エラーが発生するとTrueを返す
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.TestPrint">
+	<summary>
+ テスト印字
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.TextSizeBigger(System.Byte)">
+	<summary>
+ コマンド送信（全角文字4倍角指定コマンド）
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.ResetTextSize">
+	<summary>
+ コマンド送信（全角文字倍角解除コマンド）
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.SetTextAlign(Techno.DeviceControls.SK121Control.TextAlign)">
+	<summary>
+ コマンド送信（文字揃え）
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.SetText(System.String)">
+	<summary>
+ コマンド送信（文字列送信）
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.InsertLineFeed(System.Int32)">
+	<summary>
+ 改行する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.UnderLine">
+	<summary>
+ コマンド送信（全角文字アンダーライン指定コマンド）
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.UnderLineClear">
+	<summary>
+ コマンド送信（全角文字アンダーライン解除コマンド）
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.TextBold">
+	<summary>
+ コマンド送信（強調文字）
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.ResetTextBold">
+	<summary>
+ コマンド送信（強調文字解除）
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.SetPageMargin(System.Byte)">
+	<summary>
+ コマンド送信（印字領域幅の設定）
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.SetLineFeedPitch(System.Byte)">
+	<summary>
+ コマンド送信（改行量の設定）
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.ResetLineFeedPitch">
+	<summary>
+ コマンド送信（改行量の設定）
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.Init">
+	<summary>
+ コマンド送信（初期化）
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.InitShiftJIS">
+	<summary>
+ コマンド送信（シフトJIS指定コマンド FS C 1）
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.PaperFeed">
+	<summary>
+ コマンド送信（紙送りコマンド）
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.PaperCut">
+	<summary>
+ コマンド送信（用紙カット）
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.PrintLine">
+	<summary>
+ コマンド送信（罫線の印字）
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.GetStates">
+	<summary>
+ コマンド送信（応答コマンドの有効化）
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.DrawLine(Techno.DeviceControls.SK121Control.LineType)">
+	<summary>
+ 水平線を描く
+ </summary>
+	<param name="type"></param>
+	<returns></returns>
+</member><member name="M:Techno.DeviceControls.SK121Control.DrawDashedLine(System.Byte,System.Byte)">
+	<summary>
+ 破線を描く
+ </summary>
+	<param name="wide"></param>
+	<param name="size"></param>
+	<returns></returns>
+</member><member name="M:Techno.DeviceControls.SK121Control.ClearMessages">
+	<summary>
+ エラー情報のクリア
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.ClearByteMessages">
+	<summary>
+ エラー情報のクリア(2)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Techno.DeviceControls.SK121Control.SetErrorMessage(System.Exception)">
+	<summary>
+ 例外の種類に応じてエラータイプを設定する
+ </summary>
+	<param name="ex"></param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PRINT15
+</name>
+</assembly>
+<members>
+<member name="M:GRAN31.UI.frmPRINT15.frmPRINT04_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.txtYear_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 対象年テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.cmbMonth_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ 対象月コンボボックス_SelectedIndexChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.func8">
+	<summary>
+ 印刷ボタン_Click
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.txtKION_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ 気温テキストボックス_KeyPress
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.txtBox_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ テキストボックス_KeyPress
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.btnHINClear_Click(System.Object,System.EventArgs)">
+	<summary>
+ 商品コードクリアボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.txtBox_Enter(System.Object,System.EventArgs)">
+	<summary>
+ テキストボックス_Enter
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.txtBox_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ テキストボックス_MouseDown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.btnUpdPRT05_Click(System.Object,System.EventArgs)">
+	<summary>
+ 商品コード更新ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.btnUpdTenki_Click(System.Object,System.EventArgs)">
+	<summary>
+ 天気更新ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.GetHININFO">
+	<summary>
+ 商品コード取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.GetPRTMST">
+	<summary>
+ 帳票設定マスタ取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.GetKOSUMTA">
+	<summary>
+ コース料単価取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.Print1">
+	<summary>
+ ゴルフ場売上総計表出力
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.Print2">
+	<summary>
+ 入金売上総計表出力
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.Print3">
+	<summary>
+ 雑収入集計表出力
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.Print4">
+	<summary>
+ グリーンフィー集計表出力
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.Print5">
+	<summary>
+ 打放し球数集計表出力
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.GetTenki">
+	<summary>
+ 天気情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT15.GetTable(System.String,System.String)">
+	<summary>
+ データ取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

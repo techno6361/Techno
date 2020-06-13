@@ -1,0 +1,447 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+HINDISP01
+</name>
+</assembly>
+<members>
+<member name="M:GRAN31.UI.HINMSTButton.btnHINNMA_Click(System.Object,System.EventArgs)">
+	<summary>
+ クリックすると親フォームにイベント発行
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.HINMSTButton.ChangeColor(System.Drawing.Color)">
+	<summary>
+ 背景色を変更する
+ </summary>
+	<param name="col"></param>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.PriceDataSet">
+	<summary>
+ カードに書き込む入金額、残高、プレミアム金額、ポイントを扱うクラス
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmHINDISP01.c_strPRGID">
+	<summary>
+ プログラムID
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmHINDISP01._blnCard1">
+	<summary>
+ 打席カード精算ボタン表示・非表示
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmHINDISP01._blnRECEIPT">
+	<summary>
+ レシート発行フラグ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmHINDISP01._rePrint">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmHINDISP01._strSTFCODE">
+	<summary>
+ スタッフコード
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmHINDISP01._strSTFNAME">
+	<summary>
+ スタッフ名
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.frmENTHIST01_Load(System.Object,System.EventArgs)">
+	<summary>
+ 開始処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.func11">
+	<summary>
+ F11クリアボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.btnClearDisp_Click(System.Object,System.EventArgs)">
+	<summary>
+ 画面クリアボタン押下
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.btnItemNumUp_Click(System.Object,System.EventArgs)">
+	<summary>
+ 数量アップボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.btnItemNumDown_Click(System.Object,System.EventArgs)">
+	<summary>
+ 数量ダウンボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.txtHINNMA_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+ 手入力_商品名入力
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.txtPrice_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+ 手入力_金額入力
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.btnHINMASTButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ 商品項目ボタンを選択
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.tabHINDISP_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ タブを切り替えたら前のタブページの選択ボタンをすべて解除する
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.btnCart_Click(System.Object,System.EventArgs)">
+	<summary>
+ カートボタン押下で商品をグリッドビューに追加
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.btnTrash_Click(System.Object,System.EventArgs)">
+	<summary>
+ ゴミ箱ボタン_グリッドの選択行を消去
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.dgvHINMTA_CellEnter(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ グリッド_セルクリック
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.btnChkCard_Click(System.Object,System.EventArgs)">
+	<summary>
+ カード確認ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.btnCashAdjust_Click(System.Object,System.EventArgs)">
+	<summary>
+ 現金精算ボタン押下
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.btnCardAdjust_Click(System.Object,System.EventArgs)">
+	<summary>
+ カード清算ボタン押下
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.btnReceipt_Click(System.Object,System.EventArgs)">
+	<summary>
+ レシート再発行ボタン押下
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.btnSlipCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ 伝票取り消しボタン押下
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.btnSlipMod_Click(System.Object,System.EventArgs)">
+	<summary>
+ 伝票修正ボタン押下
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.Start">
+	<summary>
+ 開始処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.Init">
+	<summary>
+ 画面初期化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.GetHINMTB">
+	<summary>
+ 商品項目タグの取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.GetHINMTA">
+	<summary>
+ 商品項目の取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.GetHINMTA_Tab(System.Data.OrderedEnumerableRowCollection{System.Data.DataRow}@,System.String,System.Int32)">
+	<summary>
+ 分類ごとに商品項目を設置する
+ </summary>
+	<param name="query"></param>
+	<param name="buncdb"></param>
+	<param name="page"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.GetPOINTMST">
+	<summary>
+ ポイント付与率の取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.GetPointRateInt(System.Int32)">
+	<summary>
+ ポイントの取得_Int
+ </summary>
+	<param name="price"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.SetHINMAButton">
+	<summary>
+ 各タブページに商品ボタンを配置する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.tabHINDISP_DrawItem(System.Object,System.Windows.Forms.DrawItemEventArgs)">
+	<summary>
+ タブの背景色や縦書きを適応
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.SetTabPage">
+	<summary>
+ タブページの設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.SetCartEnable">
+	<summary>
+ カートボタンの有効/無効を設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.SetTrashEnable">
+	<summary>
+ ゴミ箱ボタンの有効/無効の設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.SetAdjustmentEnable">
+	<summary>
+ 現金精算、カード清算ボタン、画面クリアの有効/無効を設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.SetAllButtonsEnable">
+	<summary>
+ ボタンの有効/無効をまとめて設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.CalcPrice">
+	<summary>
+ グリッド内の合計金額、内税、取得ポイントなどを計算して表示する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.CallRegister(GRAN31.UI.ResultRegister@,TMT90.Receipt@,GRAN31.UI.Custmer)">
+	<summary>
+ レジ画面を呼び出し
+ </summary>
+	<param name="custmer"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.InsDUDNTRN(GRAN31.UI.ResultRegister@,GRAN31.UI.Custmer@)">
+	<summary>
+ DUNDNTRNの登録
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.InsDENTRA(GRAN31.UI.ResultRegister@,GRAN31.UI.Custmer@)">
+	<summary>
+ DENTRAの登録
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.InsHINTRN(GRAN31.UI.ResultRegister@,GRAN31.UI.Custmer@)">
+	<summary>
+ HINTRNの登録
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.UpdateSEQTRN">
+	<summary>
+ SEQTRNの伝票番号の更新
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.UpdateKINSMA(GRAN31.UI.ResultRegister@,GRAN31.UI.Custmer@)">
+	<summary>
+ KINSMAの更新
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.UpdateDPOINTSMA(GRAN31.UI.ResultRegister@,GRAN31.UI.Custmer@)">
+	<summary>
+ DPOINTSMAの更新
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.UpdateCARDLIMIT(GRAN31.UI.ResultRegister@,GRAN31.UI.Custmer@)">
+	<summary>
+ カード有効期限の更新
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.GetCCSNAME(System.Int32)">
+	<summary>
+ 氏名取得
+ </summary>
+	<param name="intNCSNO"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.GetCSMAST(System.String,System.String)">
+	<summary>
+ 顧客情報取得
+ </summary>
+	<param name="NCSNO"></param>
+	<param name="NCARDID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.GetREGISTER_DENNO">
+	<summary>
+ レジ画面用の伝票番号を取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.GetREGISTER_GOODS">
+	<summary>
+ レジ画面用の商品一覧を取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.GetURIDETAIL(System.Data.DataTable@,System.Data.DataRow@,System.String)">
+	<summary>
+ 売上情報を取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.RequestCard(GRAN31.UI.Custmer@,System.String)">
+	<summary>
+ カード読込処理と顧客情報の取得
+ </summary>
+	<param name="custmer"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.WriteCard(GRAN31.UI.PriceDataSet,GRAN31.UI.Custmer)">
+	<summary>
+ カードの書き込み
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.EjectCard">
+	<summary>
+ カード排出処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.CheckCard">
+	<summary>
+ 受付カードが同じか確認
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.CheckUPDDTM(System.String,System.DateTime@)">
+	<summary>
+ 他端末からの更新チェック(TRUE:更新あり FALSE:更新なし)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.GetCurrentUPDDTM(System.String)">
+	<summary>
+ 現在の最新更新日時を取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.ShowErrorMessage(System.String)">
+	<summary>
+ エラーメッセージの表示
+ </summary>
+	<param name="msg"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.btn1_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン_電卓型入力フォーム
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.InputValue(BaseControl.CustomTextBoxNum@,System.String)">
+	<summary>
+ 先頭の0を削除してボタンの値をテキストボックスへ挿入
+ </summary>
+	<param name="value"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.dgvs_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ グリッド_KeyPress
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.dgvHINMTA_Enter(System.Object,System.EventArgs)">
+	<summary>
+ グリッドビューのフォーカス状態でReadOnlyセルのフォーカス制御を行う
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.dgvs_CellEnter(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ グリッド_CellEnter
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.dgvHINMTA_CellEndEdit(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ グリッド_入力終了
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHINDISP01.dgvs_CellFormatting(System.Object,System.Windows.Forms.DataGridViewCellFormattingEventArgs)">
+	<summary>
+ グリッド_フォーマット
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

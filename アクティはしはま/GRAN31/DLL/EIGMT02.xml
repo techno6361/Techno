@@ -1,0 +1,162 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EIGMT02
+</name>
+</assembly>
+<members>
+<member name="M:GRAN31.UI.frmEIGMT02.frmEIGMT02_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.cmbRKNKB_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ 料金体系コンボボックス_SelectedIndexChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.btnCopy_Click(System.Object,System.EventArgs)">
+	<summary>
+ コピーボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.txtMAXJDCNT_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 上限打球数テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.txtJKNMM_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 貸し時間テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.txtJKNKIN_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 単価テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.txtPOINT_Validated(System.Object,System.EventArgs)">
+	<summary>
+ ポイントテキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.txtENDTIME_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 終了時間テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.txtMAXBALLSU_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 利用限度球数テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.txtBox_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ テキストボックス_KeyPress
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.txtBox_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ テキストボックス_MouseDown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.txtBox_Enter(System.Object,System.EventArgs)">
+	<summary>
+ テキストボックス_Enter
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.func11">
+	<summary>
+ F11クリアボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.func12">
+	<summary>
+ F12登録ボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.Init">
+	<summary>
+ 画面初期表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.GetSYSMTA">
+	<summary>
+ システム情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.GetKBMAST">
+	<summary>
+ 顧客種別情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.GetRKNMTA">
+	<summary>
+ 料金体系マスタ情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.GetEIGMTB(System.Boolean)">
+	<summary>
+ 打ち放題マスタ情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.ChangeMaxBallsu">
+	<summary>
+ 利用限度球数計算
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.CheckRegister(System.String@)">
+	<summary>
+ 登録データチェック
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEIGMT02.Register">
+	<summary>
+ 登録処理
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PRINT08
+</name>
+</assembly>
+<members>
+<member name="F:GRAN31.UI.frmPRINT08._intNCSNO">
+	<summary>
+ 選択顧客番号
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.frmPRINT04_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.dtpSEATDT_ValueChanged(System.Object,System.EventArgs)">
+	<summary>
+ 営業日付テキストボックス_ValueChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.dgvNKNTRN_Click(System.Object,System.EventArgs)">
+	<summary>
+ 顧客グリッド_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.cmbTerm_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ 期間コンボボックス
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.func8">
+	<summary>
+ 印刷ボタン_Click
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.btnCSMAST01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 顧客情報ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.btnFIND_Click(System.Object,System.EventArgs)">
+	<summary>
+ 検索ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.btnPrev_Click(System.Object,System.EventArgs)">
+	<summary>
+ Prevボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.btnNext_Click(System.Object,System.EventArgs)">
+	<summary>
+ Nextボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.frmPRINT08_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ ESCキーで処理の中断
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.PrintList(System.ComponentModel.BindingList{GRAN31.UI.NKNTRN_View})">
+	<summary>
+ グリッドに表示中の商品売上管理帳票(日報)を印刷
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.GetNKNTRN(System.String,System.String,System.String)">
+	<summary>
+ 入金トランを取得し、グリッドに反映
+ </summary>
+	<param name="date1"></param>
+	<param name="date2"></param>
+	<param name="stsflg"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.ApplyGrid(System.Int32)">
+	<summary>
+ ページングとグリッド処理
+ </summary>
+	<param name="page"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.btnNext_Enabled">
+	<summary>
+ 次へボタンの有効化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.btnNext_Disabled">
+	<summary>
+ 次へボタンの無効化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.btnPrev_Enabled">
+	<summary>
+ 前へボタンの有効化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.btnPrev_Disabled">
+	<summary>
+ 前へボタンの無効化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.AllPaging_Disabled">
+	<summary>
+ ページング処理の無効化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.IsAbort">
+	<summary>
+ 処理の中断が呼ばれた
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT08.ResetAbort">
+	<summary>
+ 処理中断の初期化
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

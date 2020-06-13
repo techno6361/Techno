@@ -1,0 +1,11 @@
+D:\GRAN29\DLL\NKNDISP01.exe
+D:\GRAN29\DLL\NKNDISP01.pdb
+D:\GRAN29\DLL\NKNDISP01.xml
+D:\GRAN29\SRC\NKNDISP01\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\GRAN29\SRC\NKNDISP01\obj\x86\Debug\GRAN29.UI.Resources.resources
+D:\GRAN29\SRC\NKNDISP01\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\GRAN29\SRC\NKNDISP01\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\GRAN29\SRC\NKNDISP01\obj\x86\Debug\NKNDISP01.exe
+D:\GRAN29\SRC\NKNDISP01\obj\x86\Debug\NKNDISP01.xml
+D:\GRAN29\SRC\NKNDISP01\obj\x86\Debug\NKNDISP01.pdb
+D:\GRAN29\SRC\NKNDISP01\obj\x86\Debug\GRAN29.UI.frmNKNDISP01.resources

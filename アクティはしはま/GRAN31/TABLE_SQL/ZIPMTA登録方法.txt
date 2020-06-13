@@ -1,0 +1,2 @@
+postgreSQLのコマンドプロンプトから実行
+copy ZIPMTA from 'C:\KEN_ALL2.CSV' with csv;

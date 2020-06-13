@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="SHIFT_JIS"?>
+<dbsettings>
+    <!-- PostgreSQL -->
+    <posgreserver>localhost</posgreserver>
+    <posgreport>5432</posgreport>
+    <posgreuserid>root</posgreuserid>
+    <posgrepassword>assist</posgrepassword>
+    <posgredatabase>ACTY</posgredatabase>
+</dbsettings>
+
+<!-- dbtpye -->
+<!-- Oracle：1 -->
+<!-- MySQL：2 -->
+<!-- PostgreSQL：3 -->

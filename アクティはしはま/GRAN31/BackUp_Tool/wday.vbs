@@ -1,0 +1,2 @@
+WScript.Quit(WeekDay(Date))
+

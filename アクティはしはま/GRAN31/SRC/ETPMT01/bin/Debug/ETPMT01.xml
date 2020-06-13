@@ -1,0 +1,135 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ETPMT01
+</name>
+</assembly>
+<members>
+<member name="T:GRAN29.UI.ETPMTA_View">
+	<summary>
+ データグリッドに表示するビューモデル
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmETPMT01.frmETPMT01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmETPMT01.cmbNKBNO_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+ コンボボックス_変更
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmETPMT01.btnCOPY_Click(System.Object,System.EventArgs)">
+	<summary>
+ コピー表示ボタン押下処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmETPMT01.func11">
+	<summary>
+ F11クリアボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmETPMT01.func12">
+	<summary>
+ F12登録ボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmETPMT01.dgvETPMTA_EditingControlShowing(System.Object,System.Windows.Forms.DataGridViewEditingControlShowingEventArgs)">
+	<summary>
+ グリッド_EditingControlShowing
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmETPMT01.dgvETPMTA_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ グリッド_KeyPress
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmETPMT01.dgvETPMTA_CellEnter(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ グリッド_CellEnter
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmETPMT01.DataGridView1_CellFormatting(System.Object,System.Windows.Forms.DataGridViewCellFormattingEventArgs)">
+	<summary>
+ グリッド_フォーマット
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmETPMT01.Init">
+	<summary>
+ 画面初期化処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmETPMT01.GetKBMAST">
+	<summary>
+ 顧客区分マスタの取得とコンボボックスの初期化
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmETPMT01.GetETPMTA(System.Int32)">
+	<summary>
+ 月間来場ポイントマスタの取得(デフォルト:1)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmETPMT01.Register">
+	<summary>
+ 登録処理
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmETPMT01.CheckENTCNT">
+	<summary>
+ 重複した数値がないかチェックする
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmETPMT01.GetCurrentNKBNO">
+	<summary>
+ 現在の顧客区分を取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmETPMT01.GetCopyNKBNO">
+	<summary>
+ コピー元区分を取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmETPMT01.GetCurrentUPDDTM">
+	<summary>
+ 現在の最新更新日時を取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN29.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN29.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN29.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

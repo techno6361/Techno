@@ -1,0 +1,76 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NKNDISP03
+</name>
+</assembly>
+<members>
+<member name="P:GRAN29.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN29.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN29.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:GRAN29.UI.frmNKNDISP03.btnRePrint_Click(System.Object,System.EventArgs)">
+	<summary>
+ レシート再発行ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmNKNDISP03.btnCANCEL_Click(System.Object,System.EventArgs)">
+	<summary>
+ ｻｰﾋﾞｽ入金取消ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmNKNDISP03.btnNKNNM_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入金ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmNKNDISP03.btnUpDown_Click(System.Object,System.EventArgs)">
+	<summary>
+ 精算ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmNKNDISP03.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmNKNDISP03.GetHINMTB">
+	<summary>
+ 商品分類マスタ情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmNKNDISP03.GetNKNMST">
+	<summary>
+ 入金マスタ情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmNKNDISP03.UpdNKNMST(System.String,System.Int32,System.Boolean@,System.String@)">
+	<summary>
+ カード支出処理
+ </summary>
+	<param name="strNKNNM"></param>
+	<param name="intNKNKN"></param>
+	<param name="strMsg"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

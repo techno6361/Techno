@@ -1,0 +1,177 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SEATSERVER01
+</name>
+</assembly>
+<members>
+<member name="F:GRAN31.UI.frmSEATSERVER01._spSEATLINK">
+	<summary>
+ 打席通信用シリアルポート
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSEATSERVER01._blnEndFlg">
+	<summary>
+ '業務終了ボタン押したときTrue←スレッド内で使用
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSEATSERVER01._blnSeatCom_Err">
+	<summary>
+ 通信変換機またはCOMポートの異常時True
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATSERVER01.mciSendString(System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ 呼び出し制御関連
+ </summary>
+	<param name="lpstrCommand"></param>
+	<param name="lpstrRetrunString"></param>
+	<param name="uReturnLength"></param>
+	<param name="hwndCallback"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSEATSERVER01._intNCSRANK">
+	<summary>
+ 顧客種別
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSEATSERVER01._intSleep">
+	<summary>
+ 送信後受信待ち時間
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSEATSERVER01._sw">
+	<summary>
+ ストップウォッチ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATSERVER01.frmSEATSERVER01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATSERVER01.frmSEATSERVER01_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ フォーム_FormClosing
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATSERVER01.frmSEATSERVER01_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+	<summary>
+ フォーム_FormClosed
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATSERVER01.GetSYSMTA">
+	<summary>
+ システム情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATSERVER01.GetRknInfo">
+	<summary>
+ 本日料金体系情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATSERVER01.GetEIGMTA">
+	<summary>
+ 営業情報マスタ取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATSERVER01.UpdSEATWORK(System.Int32,System.Int32)">
+	<summary>
+ 打席情報ワーク更新
+ </summary>
+	<param name="intSEATNO"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATSERVER01.UpdSEATSMC">
+	<summary>
+ 打席情報サマリC更新
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATSERVER01.UpdSEATINFO(System.Data.DataRow[])">
+	<summary>
+ 打席情報サマリ更新
+ </summary>
+	<param name="drow"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATSERVER01.GetSEATRSV">
+	<summary>
+ 打席予約状況取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATSERVER01.GetCsInfo(System.Data.DataRow[]@,System.String@)">
+	<summary>
+ 顧客情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATSERVER01.ResetSeatWork(System.Int32)">
+	<summary>
+ シートワークを再作成
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATSERVER01.GetSeatInfo(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean@)">
+	<summary>
+	</summary>
+	<param name="strSEAT1"></param>
+	<param name="strSEAT2"></param>
+	<param name="intLEFTKB"></param>
+	<param name="strPASSCD"></param>
+	<param name="strBALLKIN01"></param>
+	<param name="strBALLKIN02"></param>
+	<param name="strBALLKIN03"></param>
+	<param name="strBALLKIN04"></param>
+	<param name="strBALLKIN05"></param>
+	<param name="strBALLKIN06"></param>
+	<param name="strBALLKIN07"></param>
+	<param name="strBALLKIN08"></param>
+	<param name="strBALLKIN09"></param>
+	<param name="strBALLKIN10"></param>
+	<param name="strBALLKIN11"></param>
+	<param name="strBALLKIN12"></param>
+	<param name="strYUSENKIN"></param>
+	<param name="strMAXBALL"></param>
+	<param name="strTAX"></param>
+	<param name="blnUpdDB"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATSERVER01.SendTanka(System.Byte[],System.String,System.String)">
+	<summary>
+ 会員期限切れの単価送信
+ </summary>
+	<param name="pbytSend"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATSERVER01.CardEject(System.Byte[])">
+	<summary>
+ カード停止中の場合強制排出
+ </summary>
+	<param name="pbytSend"></param>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

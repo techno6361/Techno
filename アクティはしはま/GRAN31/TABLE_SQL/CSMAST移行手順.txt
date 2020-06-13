@@ -1,0 +1,7 @@
+①CSVファイルを保存し直す
+②CSMAST2.sqlよりﾃｰﾌﾞﾙ作成
+③CSVファイルをCSMAST2ﾃｰﾌﾞﾙに移行
+  psqlより
+  postgreSQLのコマンドプロンプトから実行
+  copy CSMAST2 from 'C:\CSDATA.CSV' with csv;
+④SakuragiConvertよりexe実行

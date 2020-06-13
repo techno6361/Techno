@@ -1,0 +1,3563 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AUTOFRONT01
+</name>
+</assembly>
+<members>
+<member name="M:GRAN31.UI.frmEJECTCARD.frmEJECTCARD_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEJECTCARD.frmEJECTCARD_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEJECTCARD.mEjectCard_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+	<summary>
+ カード発券
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.Sound.PlayType">
+	<summary>
+ 【NORMAL】通常再生【SYNC】再生が終わるまで待機【LOOPING】ループ再生
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.Play(System.String,GRAN31.UI.Sound.PlayType)">
+	<summary>
+ 音声を再生する
+ </summary>
+	<param name="name"></param>
+	<param name="type"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlayInsertCard(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ カードをお入れ下さい
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlayReceiveCard(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ カードをお受け取りください
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlayPaymentMoney(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ お金を入れてください
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlayPaymentLimit(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ 入金限度額がオーバーしています
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlayPaymentable20(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ 紙幣は20枚まで一括で入金できます
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlayPayoutChange(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ お釣りが出ます
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlayPayoutMoney(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ お金を返却します
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlayTouchReceipt(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ 領収書が必要な方は、領収書ボタンをタッチしてください
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlayTouchAmount(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ ご希望の金額をタッチしてください
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlayTouchSeat(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ ご希望の打席をお選びください
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlayForgetAttention(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ お取り忘れがないようにご注意ください
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlayThank(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ ありがとうございました
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlayLoading(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ しばらくお待ちください
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlayTicketing(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ 発券中です
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlayTouchAnyButton(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ ご希望のボタンにタッチしてください
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlaySlotReel(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ スロット_リール回転
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlaySlotStop(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ スロット_ストップ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlaySlotWin(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ スロット_勝利
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Sound.PlaySlotWin2(GRAN31.UI.Sound.PlayType)">
+	<summary>
+ スロット_勝利2
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMSGBOXEx._intEndCnt">
+	<summary>
+ 画面終了カウント(10で終了)
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmMSGBOXEx.Reply">
+	<summary>
+ 確認メッセージ返答
+ </summary>
+	<value>【OK】True【キャンセル】False</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx.#ctor(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="Msg">メッセージ内容</param>
+	<param name="MsgType">【0】情報【1】確認【2】エラー【3】注意 </param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx.AdjustButtonPosition">
+	<summary>
+ OKボタンの位置をダイアログの真ん中に表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx.frmMSGBOXEx_Click(System.Object,System.EventArgs)">
+	<summary>
+ 画面タッチで終了
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx.frmMSGBOX01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx.btnOK_Click(System.Object,System.EventArgs)">
+	<summary>
+ OKボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx.btnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ キャンセルボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx.tmClose_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_Tick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmHAKKEN01._dcMCH3000">
+	<summary>
+ 搬送ユニットコントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmHAKKEN01.MCH3000">
+	<summary>
+ レシートプリンター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHAKKEN01.btnConnect_Click(System.Object,System.EventArgs)">
+	<summary>
+ 接続ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHAKKEN01.btnTest_Click(System.Object,System.EventArgs)">
+	<summary>
+ テストボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHAKKEN01.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHAKKEN01.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHAKKEN01.CheckCardDispenser">
+	<summary>
+ プリンター状態確認
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmBase.#ctor">
+	<summary>
+ コンストラクタ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmBase.frmBase_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmBase.ChangeOpacity(System.Drawing.Image,System.Single)">
+	<summary>
+ 画像の透明度を変更
+ </summary>
+	<param name="img"></param>
+	<param name="opacityvalue"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmBase.PushAnimation(System.Windows.Forms.Control,System.Boolean)">
+	<summary>
+ ボタンを押したときのアニメーション
+ </summary>
+	<param name="obj"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmBase.ChangePictureBoxEnabled(System.Windows.Forms.PictureBox@,System.Boolean)">
+	<summary>
+ 画像付きボタンを無効化したとき透過度も変更
+ </summary>
+	<param name="obj"></param>
+	<param name="enabled"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmBase.EnableDoubleBuffering(System.Windows.Forms.Control)">
+	<summary>
+ コントロールのDoubleBufferedプロパティをTrueにする
+ </summary>
+	<param name="control">対象のコントロール</param>
+</member><member name="M:GRAN31.UI.frmBase.GetAllControls(System.Windows.Forms.Control)">
+	<summary>
+ 全てのコントロールを取得
+ </summary>
+	<param name="top"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmHAKKEN01_STR610._dcSTR610">
+	<summary>
+ レシートプリンタコントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmHAKKEN01_STR610.STR610">
+	<summary>
+ レシートプリンター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHAKKEN01_STR610.btnConnect_Click(System.Object,System.EventArgs)">
+	<summary>
+ 接続ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHAKKEN01_STR610.btnTest_Click(System.Object,System.EventArgs)">
+	<summary>
+ テスト印刷ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHAKKEN01_STR610.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHAKKEN01_STR610.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmHAKKEN01_STR610.CheckCardDispenser">
+	<summary>
+ プリンター状態確認
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.frmPRINT04_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.frmNKNTRN_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.dtpSEATDT_ValueChanged(System.Object,System.EventArgs)">
+	<summary>
+ 営業日付テキストボックス_ValueChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.cmbTerm_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ 期間コンボボックス
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.func8">
+	<summary>
+ 印刷ボタン_Click
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.btnFIND_Click(System.Object,System.EventArgs)">
+	<summary>
+ 検索ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.btnPrev_Click(System.Object,System.EventArgs)">
+	<summary>
+ Prevボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.btnNext_Click(System.Object,System.EventArgs)">
+	<summary>
+ Nextボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.frmPRINT08_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ ESCキーで処理の中断
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.GetNKNTRN(System.String,System.String,System.String)">
+	<summary>
+ 入金トランを取得し、グリッドに反映
+ </summary>
+	<param name="date1"></param>
+	<param name="date2"></param>
+	<param name="stsflg"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.ApplyGrid(System.Int32)">
+	<summary>
+ ページングとグリッド処理
+ </summary>
+	<param name="page"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.btnNext_Enabled">
+	<summary>
+ 次へボタンの有効化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.btnNext_Disabled">
+	<summary>
+ 次へボタンの無効化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.btnPrev_Enabled">
+	<summary>
+ 前へボタンの有効化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.btnPrev_Disabled">
+	<summary>
+ 前へボタンの無効化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.AllPaging_Disabled">
+	<summary>
+ ページング処理の無効化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.IsAbort">
+	<summary>
+ 処理の中断が呼ばれた
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNTRN.ResetAbort">
+	<summary>
+ 処理中断の初期化
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:GRAN31.UI.frmSlot.frmSlot_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_ロード
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot.frmSlot_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_表示
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot.timStart_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_スロット開始
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot.timSlot_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_絵柄表示
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot.timBlinkText_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_点滅
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot.timClose_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_終了
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot.btnExit_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン_スキップ/終了
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot.btnRetry_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン_リトライ
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot.btnCharge_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン_入金
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot.Lottery">
+	<summary>
+ 抽選
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot.GetLotteryValue(System.Int32)">
+	<summary>
+ 抽選後、抽選した当選役を取得する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot.GetPointValue(System.Int32)">
+	<summary>
+ 役に対するポイントを取得する
+ </summary>
+	<param name="egara"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot.RandRet(System.Int32)">
+	<summary>
+ 確率判定
+ </summary>
+	<param name="par"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot.SlotStart">
+	<summary>
+ スロット開始
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot.ReelAnimation(System.Int32)">
+	<summary>
+ リールアニメーション
+ </summary>
+	<param name="i"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot.ShowHazure">
+	<summary>
+ 3つ目のリールを必ず外れるように補正
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.SlotPattern">
+	<summary>
+ スロットの絵柄クラス
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Xorshift128.#ctor(System.UInt32,System.UInt32,System.UInt32,System.UInt32)">
+	<summary>
+ 指定した4つのシード値を使用して、
+ Xorshift128クラスのインスタンスを初期化します。
+ </summary>
+	<param name="seedX">シード値の1つ (x)。</param>
+	<param name="seedY">シード値の1つ (y)。</param>
+	<param name="seedZ">シード値の1つ (z)。</param>
+	<param name="seedW">シード値の1つ (w)。</param>
+</member><member name="M:GRAN31.UI.Xorshift128.NextUInt32">
+	<summary>
+ 乱数を返します。
+ </summary>
+	<returns>
+ UInt32.MinValue 以上 UInt32.MaxValue 以下の
+ 32ビット符号なし整数。
+ </returns>
+</member><member name="T:GRAN31.UI.Xorshift128">
+	<summary>
+ "Xorshift RNGs" (George Marsaglia) の xor128 アルゴリズムを使用した
+ 擬似乱数ジェネレーターを表します。
+ </summary>
+	<remarks>
+ "Xorshift RNGs"
+ http://www.jstatsoft.org/v08/i14/paper
+ </remarks>
+</member><member name="M:GRAN31.UI.frmEJECTCARD_STR610.frmEJECTCARD_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEJECTCARD_STR610.frmEJECTCARD_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEJECTCARD_STR610.mEjectCard_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+	<summary>
+ カード発券
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEJECTCARD_STR610.InsDUDNTRN_ForCardDispenser(System.String,System.Int32,System.DateTime,System.String)">
+	<summary>
+ 売上トランに新規作成(カード発券機用)
+ </summary>
+	<param name="key_udndt"></param>
+	<param name="key_udnno"></param>
+	<param name="key_insdtm"></param>
+	<param name="key_insdtmstr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEJECTCARD_STR610.InsDENTRA_ForCardDispenser(System.String,System.Int32,System.DateTime,System.String)">
+	<summary>
+ 伝票トランに新規作成(カード発券機用)
+ </summary>
+	<param name="key_udndt"></param>
+	<param name="key_udnno"></param>
+	<param name="key_insdtm"></param>
+	<param name="key_insdtmstr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEJECTCARD_STR610.UpdateREPOCHARGE_M(System.String)">
+	<summary>
+ 帳票用入金機履歴更新(ｶｰﾄﾞ発行回数)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEJECTCARD_STR610.GetUDNNO">
+	<summary>
+ 伝票番号の取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEJECTCARD_STR610.UpdateSEQTRN">
+	<summary>
+ SEQTRNの伝票番号の更新
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHECKRESULT02._dcICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHECKRESULT02._dcMCH3000">
+	<summary>
+ MCH3000ユニット制御
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHECKRESULT02.ICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHECKRESULT02.MCH3000">
+	<summary>
+ MCH3000ユニット制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHECKRESULT02.frmCHECKIN_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHECKRESULT02.frmCHECKIN_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHECKRESULT02.btnCharge_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン_入金画面へ
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHECKRESULT02.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHECKRESULT02.tmSound_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_音声
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHECKRESULT02.timBlinkText_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_文字の点滅
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHECKRESULT02.tmClose_Tick(System.Object,System.EventArgs)">
+	<summary>
+ 自動で閉じるタイマー
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHECKRESULT02.EjectPreCard">
+	<summary>
+ 排出停止中のカードを排出
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHECKRESULT._dcICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHECKRESULT._dcMCH3000">
+	<summary>
+ MCH3000ユニット制御
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHECKRESULT.ICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHECKRESULT.MCH3000">
+	<summary>
+ MCH3000ユニット制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHECKRESULT.SlotAfter">
+	<summary>
+ ﾁｪｯｸｱｳﾄ時にスロットをﾌﾟﾚｲ済みならばTrue
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHECKRESULT.frmCHECKRESULT_Click(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHECKRESULT.frmCHECKRESULT_Disposed(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Disposed
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHECKRESULT.frmCHECKIN_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHECKRESULT.frmCHECKIN_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHECKRESULT.btnCharge_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン_入金画面へ
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHECKRESULT.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHECKRESULT.tmSound_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_音声
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHECKRESULT.timBlinkText_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_文字の点滅
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHECKRESULT.tmClose_Tick(System.Object,System.EventArgs)">
+	<summary>
+ 自動で閉じるタイマー
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHECKRESULT.IsResultEjectStopMode">
+	<summary>
+ 排出停止モード判定
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmPlaySelect01._iDatabase">
+	<summary>
+ データベース制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmPlaySelect01._dcICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmPlaySelect01.iDatabase">
+	<summary>
+ データベース制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmPlaySelect01.ICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmPlaySelect01.PlaySelect">
+	<summary>
+ プレイセレクト
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmPlaySelect01.ENTKIN">
+	<summary>
+ 入場料
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmPlaySelect01.JKNKB">
+	<summary>
+ 時間区分
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmPlaySelect01.JKNMM">
+	<summary>
+ 貸し時間
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmPlaySelect01.FLRKB">
+	<summary>
+ 指定フロア
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmPlaySelect01.POINT">
+	<summary>
+ ポイント
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPlaySelect01.frmPlaySelect01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPlaySelect01.btnTama_Click(System.Object,System.EventArgs)">
+	<summary>
+ 一球打ちボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPlaySelect01.btnJKNKB_Click(System.Object,System.EventArgs)">
+	<summary>
+ 打ち放題ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPlaySelect01.btnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPlaySelect01.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPlaySelect01.GetEIGMTB">
+	<summary>
+ 打ち放題マスタ情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSEATINFOEx._cintSeatPosition">
+	<summary>
+ 打席開始位置【0】左から【1】右から
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSEATINFOEx._intSelectZoom">
+	<summary>
+ 選択拡大ボタン情報【0】左【1】中央【右】
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSEATINFOEx.SELECTSEAT">
+	<summary>
+ 選択打席
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSEATINFOEx.CANCEL">
+	<summary>
+ キャンセルされたかどうか
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATINFOEx.frmSEATINFO01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATINFOEx.frmSEATINFO01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATINFOEx.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATINFOEx.btnSeat_Click(System.Object,System.EventArgs)">
+	<summary>
+ 打席ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATINFOEx.btnZoom_Click(System.Object,System.EventArgs)">
+	<summary>
+ 拡大ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATINFOEx.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATINFOEx.SetSeatButton(System.Int32,System.Int32,System.Drawing.Color)">
+	<summary>
+ 打席情報ボタンセット
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATINFOEx.SetSeatInfo">
+	<summary>
+ 打席使用状況取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATINFOEx.GetSEATRSV(System.Int32)">
+	<summary>
+ 打席予約状況取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATINFOEx.UpdSEATRSV(System.Int32)">
+	<summary>
+ 打席予約情報更新処理
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSEATINFOEx.GetZoomSeatInfo(System.Windows.Forms.Button@)">
+	<summary>
+ ズーム打席ボタン情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHARGEEx._iDatabase">
+	<summary>
+ データベース制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHARGEEx._dcICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHARGEEx._dcMCH3000">
+	<summary>
+ MCH3000ユニット制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHARGEEx._dcAD1">
+	<summary>
+ AD1コントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHARGEEx._dcSK121">
+	<summary>
+ レシートプリンタコントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHARGEEx._dtCSMAST">
+	<summary>
+ 顧客情報保持
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHARGEEx._intInBill">
+	<summary>
+ 紙幣投入枚数
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHARGEEx._blnReceipt">
+	<summary>
+ 領収書フラグ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHARGEEx._intPayCommand">
+	<summary>
+ 入金設定
+ 【0】入金禁止【1】千円札のみ【3】５千円・1万円禁止【7】1万円禁止【15】全紙幣可
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHARGEEx._strErrMessage">
+	<summary>
+ エラーメッセージ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHARGEEx.DESIPOT_BUTTON_W_IMAGE">
+	<summary>
+ 画像ファイルの定義
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHARGEEx.iDatabase">
+	<summary>
+ データベース制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHARGEEx.ICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHARGEEx.MCH3000">
+	<summary>
+ MCH3000ユニット制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHARGEEx.AD1">
+	<summary>
+ AD1制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHARGEEx.SK121">
+	<summary>
+ レシートプリンター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHARGEEx.CSMAST">
+	<summary>
+ 顧客情報ﾃｰﾌﾞﾙ
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHARGEEx.EjectFlg">
+	<summary>
+ カード排出フラグ
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHARGEEx.Err">
+	<summary>
+ エラー発生
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.frmCHARGE_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.frmCHARGE01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.btnNKNKN_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入金ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.btnReceipt_Click(System.Object,System.EventArgs)">
+	<summary>
+ 領収書ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.timCharge_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_Tick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.Timer2_Tick(System.Object,System.EventArgs)">
+	<summary>
+ 領収書音声タイマー
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.SetDataFromCard">
+	<summary>
+ 読み込んだカードから各値を設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.CheckPrinter">
+	<summary>
+ プリンター状態確認
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.CheckAD1(System.Boolean)">
+	<summary>
+ ビルバリ情報確認
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.GetNKNMST">
+	<summary>
+ 入金マスタ情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.DelNknInfo(System.Int32,System.Int32)">
+	<summary>
+ カード書き込み失敗による入場情報削除
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.ThreadAD1">
+	<summary>
+ 紙幣識別スレッド
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.btnReceipt_Checked">
+	<summary>
+ レシートボタンのチェック
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.btnReceipt_UnChecked">
+	<summary>
+ レシートボタンの非チェック
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.lblNKNKN01_Click(System.Object,System.EventArgs)">
+	<summary>
+ 関連するパネルをクリックした場合、実態のボタンを起動させる
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.timBlinkText_Tick(System.Object,System.EventArgs)">
+	<summary>
+ 文字の点滅
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.GetNKNKNPanels">
+	<summary>
+ 入金ボタンを配列で取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.GetCSMAST(System.String,System.String)">
+	<summary>
+ 顧客情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEEx.RestoreCreateCustmer(System.Int32,GRAN31.UI.EjectCardRestoreModel@)">
+	<summary>
+ 新規発行操作の取消とカード排出
+ </summary>
+	<param name="intStep"></param>
+	<param name="backup"></param>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmPRINTER01._dcSK121">
+	<summary>
+ レシートプリンタコントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmPRINTER01.SK121">
+	<summary>
+ レシートプリンター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINTER01.btnTest_Click(System.Object,System.EventArgs)">
+	<summary>
+ テスト印刷ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINTER01.btnConnect_Click(System.Object,System.EventArgs)">
+	<summary>
+ 接続ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINTER01.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINTER01.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINTER01.CheckPrinter">
+	<summary>
+ プリンター状態確認
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.UserInfo">
+	<summary>
+ ログイン状態/カード残高/残ポイント
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.CheckResult">
+	<summary>
+ チェックイン/チェックアウト画面の結果を格納
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.CustmerModel">
+	<summary>
+ 顧客モデル
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmINFOEx._dcSK121">
+	<summary>
+ レシートプリンタコントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmINFOEx.SK121">
+	<summary>
+ レシートプリンター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx.frmMSGBOX01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx.btnCheckIn_Click(System.Object,System.EventArgs)">
+	<summary>
+ チェックインボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx.btnCheckIn_PerformClick">
+	<summary>
+ チェックインボタン_実行
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx.btnCharge_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入金画面_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx.btnCharge_PerformClick">
+	<summary>
+ 入金画面_実行
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx.btnExit_Click(System.Object,System.EventArgs)">
+	<summary>
+ Exitボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx.btnExit_PerformClick">
+	<summary>
+ Exitボタン_実行
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx.tmClose_Tick(System.Object,System.EventArgs)">
+	<summary>
+ 終了タイマー_Tick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx.CheckPrinter">
+	<summary>
+ プリンター状態確認
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._iDatabase">
+	<summary>
+ データベース制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._dcICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._dcMCH3000">
+	<summary>
+ MCH3000制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._dcSK121">
+	<summary>
+ レシートプリンタコントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._dcAD1">
+	<summary>
+ ビルバリコントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._dtCSMAST">
+	<summary>
+ 顧客情報保持
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._intSeatNo">
+	<summary>
+ 選択打席番号
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._strCKBNAME">
+	<summary>
+ 顧客種別名
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._intPlaySelect">
+	<summary>
+ 一球打ちか打ち放題か【1】一球打ち【2】打ち放題
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._intENTKIN">
+	<summary>
+ 入場料金
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._intJKNKB">
+	<summary>
+ 時間貸し区分
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._intJKNMM">
+	<summary>
+ 貸し時間
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._intFLRKB">
+	<summary>
+ 指定フロア
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._intBALLKIN1F">
+	<summary>
+ ボール単価1F
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._intBALLKIN2F">
+	<summary>
+ ボール単価2F
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._intGetPOINT">
+	<summary>
+ 取得ﾎﾟｲﾝﾄ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._intETPPO">
+	<summary>
+ 月間来場ポイント
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._intBIRTHMPO">
+	<summary>
+ 誕生月ポイント
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._intBIRTHDPO">
+	<summary>
+ 誕生日ﾎﾟｲﾝﾄ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._strFunction">
+	<summary>
+ 入金機機能
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._intZANKIN_CLEARE">
+	<summary>
+ 有効期限切れ時カード残金クリア区分【0】クリアせずｶｰﾄﾞ受け付けない【1】残金クリアする
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._intCLRKBN">
+	<summary>
+ 有効期限切れ確認変数
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMenuEx._blnEjectFlg">
+	<summary>
+ カード排出フラグ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.frmMenu01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.frmMenu01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.frmMenu01_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+	<summary>
+ フォーム_FormClosed
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.frmMENU01_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ フォーム_KeyDown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.picSYSMENU01_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ システムメニュー起動カウントダウン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.picSYSMENU01_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ システムメニュー起動カウントダウン解除
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.timSYSMENU01_Tick(System.Object,System.EventArgs)">
+	<summary>
+ システムメニュー起動タイマー
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.btnCheckIn_Click(System.Object,System.EventArgs)">
+	<summary>
+ チェックインボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.btnCharge_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入金ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.btnCardDispenser_Click(System.Object,System.EventArgs)">
+	<summary>
+ ｶｰﾄﾞ発行ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.timClearInfo_Tick(System.Object,System.EventArgs)">
+	<summary>
+ 画面情報クリアタイマー
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.timRead_Tick(System.Object,System.EventArgs)">
+	<summary>
+ カードリードタイマー(自動受付用)_Tick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.ReadStart">
+	<summary>
+ カード要求開始(自動ﾁｪｯｸｱｳﾄ用)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.ReadStop">
+	<summary>
+ カード要求ストップ(自動ﾁｪｯｸｱｳﾄ用)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.CardEject(System.Boolean)">
+	<summary>
+ ｶｰﾄﾞ排出
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.GetSYSMTA">
+	<summary>
+ システム情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.GetRknInfo">
+	<summary>
+ 本日料金体系情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.GetEIGMT">
+	<summary>
+ 営業情報マスタ取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.GetKBMAST">
+	<summary>
+ 顧客種別情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.GetCSMAST">
+	<summary>
+ 顧客情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.GetETPMTA">
+	<summary>
+ 月間来場ポイント
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.CheckIn(System.String@)">
+	<summary>
+ チェックイン
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.UpdDatabase(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String@,System.Int32@)">
+	<summary>
+ データベース更新処理
+ </summary>
+	<param name="strSltNKBNO">選択された種別</param>
+	<param name="intZANKN">残金額</param>
+	<param name="intPREZANKN">残プレミアム</param>
+	<param name="intGetPOINT">取得ﾎﾟｲﾝﾄ</param>
+	<param name="intENTKIN">入場料金(打ち放題料金)</param>
+	<param name="intTAX">消費税</param>
+	<param name="intPayKINGAKU">支払った残金額</param>
+	<param name="intPayPREMKN">支払ったプレミアム額</param>
+	<param name="strMsg">エラーメッセージ</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.ClrDENNO">
+	<summary>
+ 伝票番号クリア処理
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.InsREPOCHARGE_M">
+	<summary>
+ 帳票用入金機履歴テーブル作成
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.SetCheckInResult(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ チェックイン情報の登録
+ </summary>
+	<param name="intENTKIN"></param>
+	<param name="intETPPO"></param>
+	<param name="intGetPOINT"></param>
+	<param name="intENTPO"></param>
+	<param name="intBIRTHDPO"></param>
+	<param name="intBIRTHMPO"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.CheckPrinter">
+	<summary>
+ プリンター状態確認
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.CheckAD1">
+	<summary>
+ ビルバリ状態確認
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.CheckCardDispenser">
+	<summary>
+ カード発券機状態確認
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.CheckCardDispenser_STR610">
+	<summary>
+ カード発券機状態確認_STR610
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.InsDUDNTRN_ForCardDispenser(System.String,System.Int32,System.DateTime,System.String)">
+	<summary>
+ 売上トランに新規作成(カード発券機用)
+ </summary>
+	<param name="key_udndt"></param>
+	<param name="key_udnno"></param>
+	<param name="key_insdtm"></param>
+	<param name="key_insdtmstr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.InsDENTRA_ForCardDispenser(System.String,System.Int32,System.DateTime,System.String)">
+	<summary>
+ 伝票トランに新規作成(カード発券機用)
+ </summary>
+	<param name="key_udndt"></param>
+	<param name="key_udnno"></param>
+	<param name="key_insdtm"></param>
+	<param name="key_insdtmstr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.UpdateREPOCHARGE_M(System.String)">
+	<summary>
+ 帳票用入金機履歴更新(ｶｰﾄﾞ発行回数)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.GetUDNNO">
+	<summary>
+ 伝票番号の取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.UpdateSEQTRN">
+	<summary>
+ SEQTRNの伝票番号の更新
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.ClearZANKN(System.Int32)">
+	<summary>
+ 残高0円クリア
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.DelEntInfo(System.Int32,System.String,System.Int32)">
+	<summary>
+ カード書き込み失敗による入場情報削除
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.mClock_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+	<summary>
+ マルチスレッド_時計処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.mClock_ProgressChanged(System.Object,System.ComponentModel.ProgressChangedEventArgs)">
+	<summary>
+ マルチスレッド_時計表示
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMenuEx.btnInfo_Click(System.Object,System.EventArgs)">
+	<summary>
+ カード確認画面_クリック
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHARGEResult02._dcSK121">
+	<summary>
+ レシートプリンタコントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHARGEResult02._dcICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHARGEResult02._dcMCH3000">
+	<summary>
+ MCH3000ユニット制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHARGEResult02.RECEIPT_BUTTON_A_IMAGE">
+	<summary>
+ 画像ファイルの定義
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHARGEResult02.SK121">
+	<summary>
+ レシートプリンター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHARGEResult02.ICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHARGEResult02.MCH3000">
+	<summary>
+ MCH3000ユニット制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHARGEResult02.Err">
+	<summary>
+ エラー発生
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult02.frmCHARGE_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult02.frmCHARGE01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult02.btnCheckInOut_Click(System.Object,System.EventArgs)">
+	<summary>
+ チェックイン/チェックアウト
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult02.btnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ カード排出_OKボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult02.timSound_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_音声１
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult02.timSound2_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_音声２
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult02.timClose_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_終了
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult02.timBlinkText_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_点滅テキスト
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult02.timBlinkText2_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_点滅テキスト２
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult02.timReceipt_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_領収書発行
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult02.btnReceipt_Click(System.Object,System.EventArgs)">
+	<summary>
+ 領収書ボタン_クリック
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult02.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult02.CheckPrinter">
+	<summary>
+ プリンター状態確認
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult02.PrintReceipt">
+	<summary>
+ 領収書の発行
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmError01._dcAD1">
+	<summary>
+ AD1コントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmError01._dcICR700">
+	<summary>
+ ICリーダライター制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmError01._dcMCH3000">
+	<summary>
+ MCH3000ユニット制御
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmError01.ErrMessage">
+	<summary>
+ エラーメッセージ
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmError01.ICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmError01.MCH3000">
+	<summary>
+ MCH3000ユニット制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmError01.AD1">
+	<summary>
+ AD1制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmError01.frmError01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmError01.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 閉じるボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmError01.btnPowerOff_Click(System.Object,System.EventArgs)">
+	<summary>
+ 電源断ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmError01.btnReset_Click(System.Object,System.EventArgs)">
+	<summary>
+ リセットボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmError01.btnEject_Click(System.Object,System.EventArgs)">
+	<summary>
+ カード排出ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmError01.picError_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmError01.Reset_IcRw">
+	<summary>
+ ICリーダーライター初期化
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmError01.Reset_MCH3000">
+	<summary>
+ カードユニット初期化
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmError01.Reset_AD1">
+	<summary>
+ ビルバリ初期化
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmError01.CheckAD1">
+	<summary>
+ ビルバリ状態確認
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot2.frmSlot_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_ロード
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot2.frmSlot_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_表示
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot2.timStart_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_スロット開始
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot2.timSlot_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_絵柄表示
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot2.timBlinkText_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_点滅
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot2.timClose_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_終了
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot2.btnExit_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン_スキップ/終了
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot2.btnRetry_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン_リトライ
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot2.btnCharge_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン_入金
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot2.CreateLotteryTable(System.Int32)">
+	<summary>
+ 抽選テーブルの作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot2.Lottery(System.Collections.Generic.List{System.Int32})">
+	<summary>
+ 抽選
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot2.GetLotteryValue(System.Int32)">
+	<summary>
+ 抽選後、抽選した当選役を取得する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot2.GetPointValue(System.Int32)">
+	<summary>
+ 役に対するポイントを取得する
+ </summary>
+	<param name="egara"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot2.RandRet(System.Int32)">
+	<summary>
+ 確率判定
+ </summary>
+	<param name="par"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot2.SlotStart">
+	<summary>
+ スロット開始
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot2.ReelAnimation(System.Int32)">
+	<summary>
+ リールアニメーション
+ </summary>
+	<param name="i"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSlot2.ShowHazure">
+	<summary>
+ 3つ目のリールを必ず外れるように補正
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSYSMENU01_STR610._iDatabase">
+	<summary>
+ データベース制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSYSMENU01_STR610._dcICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSYSMENU01_STR610._dcMCH3000">
+	<summary>
+ MCH3000ユニット制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSYSMENU01_STR610._dcSK121">
+	<summary>
+ レシートプリンタコントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSYSMENU01_STR610._dcSTR610">
+	<summary>
+ カード発券機コントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSYSMENU01_STR610._dcAD1">
+	<summary>
+ ビルバリコントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSYSMENU01_STR610.iDatabase">
+	<summary>
+ データベース制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSYSMENU01_STR610.ICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSYSMENU01_STR610.MCH3000">
+	<summary>
+ MCH3000ユニット制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSYSMENU01_STR610.SK121">
+	<summary>
+ レシートプリンター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSYSMENU01_STR610.STR610">
+	<summary>
+ カード発券機制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSYSMENU01_STR610.AD1">
+	<summary>
+ ビルバリ制御
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSYSMENU01_STR610.PowerOff">
+	<summary>
+ 電源断が押されたかどうか
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSYSMENU01_STR610.ReStart">
+	<summary>
+ 再起動するかどうか
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01_STR610.frmSYSMENU01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01_STR610.frmSYSMENU01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01_STR610.frmSYSMENU01_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+	<summary>
+ フォーム_FormClosed
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01_STR610.frmSYSMENU01_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ フォーム_KeyDown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01_STR610.rdoSYSTEMKBN_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ システム区分ﾁｪｯｸﾎﾞｯｸｽ_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01_STR610.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01_STR610.btnSales_Click(System.Object,System.EventArgs)">
+	<summary>
+ 売上ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01_STR610.btnPrinter_Click(System.Object,System.EventArgs)">
+	<summary>
+ プリンター情報ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01_STR610.btnCardDispenser_Click(System.Object,System.EventArgs)">
+	<summary>
+ カード発券ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01_STR610.btnAD1_Click(System.Object,System.EventArgs)">
+	<summary>
+ ビルバリ情報ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01_STR610.btnExit_Click(System.Object,System.EventArgs)">
+	<summary>
+ 電源断ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01_STR610.btnUpdConfig_Click(System.Object,System.EventArgs)">
+	<summary>
+ コンフィグ保存ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01_STR610.btnNKNTRN_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入金履歴_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01_STR610.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01_STR610.SetConfigInfo">
+	<summary>
+ コンフィグ情報表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01_STR610.UpdConfigInfo">
+	<summary>
+ コンフィグ情報更新
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01_STR610.CheckAD1">
+	<summary>
+ ビルバリ状態確認
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01_STR610.btnRwReset_Click(System.Object,System.EventArgs)">
+	<summary>
+ ユニット＆RWリセット
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSALES01._iDatabase">
+	<summary>
+ データベース制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSALES01._dcICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSALES01._dcSK121">
+	<summary>
+ レシートプリンタコントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSALES01.iDatabase">
+	<summary>
+ データベース制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSALES01.ICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSALES01.SK121">
+	<summary>
+ レシートプリンター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSALES01.frmSALES_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSALES01.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSALES01.btnUpStaYear_Click(System.Object,System.EventArgs)">
+	<summary>
+ 開始年アップボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSALES01.btnDownStaYear_Click(System.Object,System.EventArgs)">
+	<summary>
+ 開始年ダウンボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSALES01.btnUpStaMonth_Click(System.Object,System.EventArgs)">
+	<summary>
+ 開始月アップボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSALES01.btnDownStaMonth_Click(System.Object,System.EventArgs)">
+	<summary>
+ 開始月ダウンボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSALES01.btnUpStaDay_Click(System.Object,System.EventArgs)">
+	<summary>
+ 開始日アップボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSALES01.btnDownStaDay_Click(System.Object,System.EventArgs)">
+	<summary>
+ 開始日ダウンボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSALES01.btnUpEndYear_Click(System.Object,System.EventArgs)">
+	<summary>
+ 終了年アップボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSALES01.btnDownEndYear_Click(System.Object,System.EventArgs)">
+	<summary>
+ 終了年ダウンボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSALES01.btnUpEndMonth_Click(System.Object,System.EventArgs)">
+	<summary>
+ 終了月アップボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSALES01.btnDownMonth_Click(System.Object,System.EventArgs)">
+	<summary>
+ 終了月ダウンボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSALES01.btnUpEndDay_Click(System.Object,System.EventArgs)">
+	<summary>
+ 終了日アップボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSALES01.btnDownEndDay_Click(System.Object,System.EventArgs)">
+	<summary>
+ 終了日ダウンボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSALES01.btnPrint_Click(System.Object,System.EventArgs)">
+	<summary>
+ 印刷ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSALES01.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSALES01.Print">
+	<summary>
+ 印刷
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEJECTCARD_Restore.frmEJECTCARD_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEJECTCARD_Restore.frmEJECTCARD_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEJECTCARD_Restore.mCreateCustmer_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+	<summary>
+ 無記名顧客作成_スレッド
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEJECTCARD_Restore.mCreateCustmer_ProgressChanged(System.Object,System.ComponentModel.ProgressChangedEventArgs)">
+	<summary>
+ 無記名顧客作成_表示
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEJECTCARD_Restore.mCreateCustmer_RunWorkerCompleted(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+	<summary>
+ 無記名顧客作成_スレッド終了
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmEJECTCARD_Restore.RestoreRegister">
+	<summary>
+ 復元
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.frmEJECTCARD_Restore">
+	<summary>
+ カード排出でエラーが起こった場合、複数テーブルを一斉に復元する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx02.#ctor(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="Msg">メッセージ内容</param>
+	<param name="MsgType">【0】情報【1】確認【2】エラー【3】注意 </param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx02.AdjustButtonPosition">
+	<summary>
+ OKボタンの位置をダイアログの真ん中に表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx02.frmMSGBOX01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx02.btnCheckIn_Click(System.Object,System.EventArgs)">
+	<summary>
+ チェックインボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx02.btnCheckIn_PerformClick">
+	<summary>
+ チェックインボタン_実行
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx02.btnCharge_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入金画面_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx02.btnCharge_PerformClick">
+	<summary>
+ 入金画面_実行
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx02.btnExit_Click(System.Object,System.EventArgs)">
+	<summary>
+ Exitボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx02.btnExit_PerformClick">
+	<summary>
+ Exitボタン_実行
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx02.frmMSGBOXEx_Click(System.Object,System.EventArgs)">
+	<summary>
+ 画面タッチで終了
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmINFOEx02.tmClose_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_Tick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMSGBOXEx02._intEndCnt">
+	<summary>
+ 画面終了カウント(10で終了)
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmMSGBOXEx02.Reply">
+	<summary>
+ 確認メッセージ返答
+ </summary>
+	<value>【OK】True【キャンセル】False</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx02.#ctor(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="Msg">メッセージ内容</param>
+	<param name="MsgType">【0】情報【1】確認【2】エラー【3】注意 </param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx02.AdjustButtonPosition">
+	<summary>
+ OKボタンの位置をダイアログの真ん中に表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx02.frmMSGBOX01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx02.btnOK_Click(System.Object,System.EventArgs)">
+	<summary>
+ OKボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx02.btnOK_PerformClick">
+	<summary>
+ OKボタンの実行
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx02.btnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ キャンセルボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx02.btnExit_Click(System.Object,System.EventArgs)">
+	<summary>
+ ×ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx02.tmClose_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_Tick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSYSMENU01._iDatabase">
+	<summary>
+ データベース制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSYSMENU01._dcICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSYSMENU01._dcMCH3000">
+	<summary>
+ MCH3000ユニット制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSYSMENU01._dcSK121">
+	<summary>
+ レシートプリンタコントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSYSMENU01._dcSTR610">
+	<summary>
+ カード発券機コントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmSYSMENU01._dcAD1">
+	<summary>
+ ビルバリコントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSYSMENU01.iDatabase">
+	<summary>
+ データベース制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSYSMENU01.ICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSYSMENU01.MCH3000">
+	<summary>
+ MCH3000ユニット制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSYSMENU01.SK121">
+	<summary>
+ レシートプリンター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSYSMENU01.STR610">
+	<summary>
+ カード発券機制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSYSMENU01.AD1">
+	<summary>
+ ビルバリ制御
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSYSMENU01.PowerOff">
+	<summary>
+ 電源断が押されたかどうか
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmSYSMENU01.ReStart">
+	<summary>
+ 再起動するかどうか
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.frmSYSMENU01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.frmSYSMENU01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.frmSYSMENU01_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+	<summary>
+ フォーム_FormClosed
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.frmSYSMENU01_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ フォーム_KeyDown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.rdoSYSTEMKBN_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ システム区分ﾁｪｯｸﾎﾞｯｸｽ_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.btnSales_Click(System.Object,System.EventArgs)">
+	<summary>
+ 売上ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.btnPrinter_Click(System.Object,System.EventArgs)">
+	<summary>
+ プリンター情報ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.btnMCH3000_Click(System.Object,System.EventArgs)">
+	<summary>
+ MCH3000ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.btnAD1_Click(System.Object,System.EventArgs)">
+	<summary>
+ ビルバリ情報ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.btnExit_Click(System.Object,System.EventArgs)">
+	<summary>
+ 電源断ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.btnUpdConfig_Click(System.Object,System.EventArgs)">
+	<summary>
+ コンフィグ保存ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.btnNKNTRN_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入金履歴_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.SetConfigInfo">
+	<summary>
+ コンフィグ情報表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.UpdConfigInfo">
+	<summary>
+ コンフィグ情報更新
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.CheckAD1">
+	<summary>
+ ビルバリ状態確認
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.GetKBMAST">
+	<summary>
+ 顧客種別情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmSYSMENU01.btnRwReset_Click(System.Object,System.EventArgs)">
+	<summary>
+ ICR700リセット
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.CheckResultCloseInterval">
+	<summary>
+ チェック結果画面が閉じる時間
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.CheckResultCloseIntervalLong">
+	<summary>
+ チェック結果画面が閉じる時間(入力を促す場合)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.CheckResultCloseIntervalShort">
+	<summary>
+ チェック結果画面が閉じる時間(Short)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.ChargeResultCloseInterval">
+	<summary>
+ 入金結果画面が閉じる時間
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.InfoCloseInterval">
+	<summary>
+ カード確認画面が閉じる時間
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.MinigameCloseInteravl">
+	<summary>
+ ミニゲーム画面が終了する時間
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.IsCheckResultEjectStopMode">
+	<summary>
+ チェック結果表示画面でカード排出を停止し入金操作を続けるモード
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.IsChargeResultEjectStopMode">
+	<summary>
+ 入金結果表示画面でカード排出を停止しチェックイン/アウトを続けるモード
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.LayoutType">
+	<summary>
+ レイアウトタイプ
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.AppFunction">
+	<summary>
+ 1111 機能 【0】なし【1】あり 【1桁目】ﾁｪｯｸｲﾝ【2桁目】ﾁｪｯｸｱｳﾄ【3桁目】入金【4桁目】ｶｰﾄﾞ発券
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.CheckInEnabled">
+	<summary>
+ チェックイン機能が有効か
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.CheckOutEnabled">
+	<summary>
+ チェックアウト機能が有効か
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.ChargeEnabled">
+	<summary>
+ 入金機能が有効か
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.HakkenEnabled">
+	<summary>
+ 発券機能が有効か
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.MinigameEnabled">
+	<summary>
+ ﾐﾆｹﾞｰﾑが有効か
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.SlotPerTables">
+	<summary>
+ スロット_確率テーブル
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.SlotPointTables">
+	<summary>
+ スロット_ポイントテーブル
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.SlotCorrectionRateTables">
+	<summary>
+ スロット_補正レート
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.SlotMaxPer">
+	<summary>
+ スロットの最大確率
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.SlotPer(System.Int32)">
+	<summary>
+ スロット確率取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.SlotCorrectionEnabled">
+	<summary>
+ スロット確率補正の有効/無効を取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.SlotCorrectionRate(System.Int32)">
+	<summary>
+ スロット確率補正取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.SlotPoint(System.Int32)">
+	<summary>
+ スロットポイント取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.CommonSettings.HakkenKSBKB">
+	<summary>
+ カード発券時の顧客区分
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.CommonSettings">
+	<summary>
+ 共有設定
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmAD1._dcAD1">
+	<summary>
+ AD1コントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmAD1.AD1">
+	<summary>
+ AD1制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmAD1.btnConnect_Click(System.Object,System.EventArgs)">
+	<summary>
+ 接続ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmAD1.btnCleaning_Click(System.Object,System.EventArgs)">
+	<summary>
+ クリーニングボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmAD1.btnUpdInfo_Click(System.Object,System.EventArgs)">
+	<summary>
+ 情報更新ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmAD1.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmAD1.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmAD1.CheckAD1">
+	<summary>
+ ビルバリ状態確認
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMSGBOXEx03._intEndCnt">
+	<summary>
+ 画面終了カウント(10で終了)
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmMSGBOXEx03.Reply">
+	<summary>
+ 確認メッセージ返答
+ </summary>
+	<value>【OK】True【キャンセル】False</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx03.#ctor(System.Collections.Generic.List{System.String})">
+	<summary>
+	</summary>
+	<param name="Msg">メッセージ内容</param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx03.AdjustButtonPosition">
+	<summary>
+ OKボタンの位置をダイアログの真ん中に表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx03.frmMSGBOX01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx03.frmMSGBOXEx03_Click(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx03.btnOK_Click(System.Object,System.EventArgs)">
+	<summary>
+ OKボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx03.btnOK_PerformClick">
+	<summary>
+ OKボタンの実行
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx03.btnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ キャンセルボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx03.btnExit_Click(System.Object,System.EventArgs)">
+	<summary>
+ ×ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx03.Timer1_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_Tick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS.frmEJECTCARD_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS.frmEJECTCARD_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS.mCreateCustmer_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+	<summary>
+ 無記名顧客作成_スレッド
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS.mCreateCustmer_ProgressChanged(System.Object,System.ComponentModel.ProgressChangedEventArgs)">
+	<summary>
+ 無記名顧客作成_表示
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS.mCreateCustmer_RunWorkerCompleted(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+	<summary>
+ 無記名顧客作成_スレッド終了
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS.GetKBMAST">
+	<summary>
+ 顧客種別情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS.GetMANNOSEQ">
+	<summary>
+ 顧客番号取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNAMELESS.InsRegister">
+	<summary>
+ 新規登録
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.frmNAMELESS">
+	<summary>
+ 無記名の顧客を作成
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmREQUESTCARDEx._dcICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmREQUESTCARDEx._dcMCH3000">
+	<summary>
+ MCH3000ユニット制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmREQUESTCARDEx._dcICR700Bak">
+	<summary>
+ バックアップ用
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmREQUESTCARDEx._iDatabase">
+	<summary>
+ DB更新用
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmREQUESTCARDEx.Command_Type.CARDINIT">
+	<summary>
+ カード初期化
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmREQUESTCARDEx.Command_Type.READ">
+	<summary>
+ カードリード
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmREQUESTCARDEx.Command_Type.WRITE">
+	<summary>
+ カードライト
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmREQUESTCARDEx.Command_Type.EJECT">
+	<summary>
+ カード排出
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.frmREQUESTCARDEx.Command_Type">
+	<summary>
+ コマンド選択プロパティ列挙体
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREQUESTCARDEx.COMMAND">
+	<summary>
+ コマンド指定
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREQUESTCARDEx.CHECKIN">
+	<summary>
+ ﾁｪｯｸｲﾝ処理かどうか【True】ﾁｪｯｸｲﾝ
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREQUESTCARDEx.CHECKOUT">
+	<summary>
+ ﾁｪｯｸｱｳﾄ処理かどうか【True】ﾁｪｯｸｱｳﾄ
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREQUESTCARDEx.EJECTSTOP">
+	<summary>
+ プリカRW内からカードを排出しない【True】しない【False】する
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREQUESTCARDEx.ERRFLG">
+	<summary>
+ エラーフラグ【True】エラー有り
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREQUESTCARDEx.ERREIFLG">
+	<summary>
+ 後方吸引時エラーフラグ【True】エラー有り
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREQUESTCARDEx.ERRRWKBN">
+	<summary>
+ PreRwエラーフラグ
+ 【1】PreRwでエラー【2】V31Rwでエラー
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREQUESTCARDEx.ERRSHOPFLG">
+	<summary>
+ 店番エラーフラグ【True】エラー
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREQUESTCARDEx.CANCEL">
+	<summary>
+ 取消確認【True】取消 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmREQUESTCARDEx.REQUEST_SKIP">
+	<summary>
+ 読み取り、書き込み時のカード要求をスキップ
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARDEx.frmREQUESTCARD_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARDEx.InitRWUnit">
+	<summary>
+ カードユニットの初期化/起動テスト
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARDEx.frmREQUESTCARD_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARDEx.btnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ 取消ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARDEx.ErrDisp(System.String)">
+	<summary>
+ エラー時のメッセージ表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARDEx.ErrWriteDisp(System.String)">
+	<summary>
+ 書き込みエラー時のメッセージ表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARDEx.CardEject">
+	<summary>
+ カード排出処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARDEx.mTimRead_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+	<summary>
+ 読み込み_ループ
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARDEx.mTimRead_RunWorkerCompleted(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+	<summary>
+ 読み込み_スレッド終了
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARDEx.mTimRead_ProgressChanged(System.Object,System.ComponentModel.ProgressChangedEventArgs)">
+	<summary>
+ 読み込み_出力
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARDEx.mWriteCard_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+	<summary>
+ 書込み_ループ
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARDEx.mWriteCard_RunWorkerCompleted(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+	<summary>
+ 書込み_スレッド終了
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARDEx.mWriteCard_ProgressChanged(System.Object,System.ComponentModel.ProgressChangedEventArgs)">
+	<summary>
+ 書込み_出力
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARDEx.mEjectCard_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+	<summary>
+ 排出_ループ
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARDEx.mEjectCard_RunWorkerCompleted(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+	<summary>
+ 排出_スレッド終了
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmREQUESTCARDEx.mEjectCard_ProgressChanged(System.Object,System.ComponentModel.ProgressChangedEventArgs)">
+	<summary>
+ 排出_出力
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.Images.GetRootImagePath">
+	<summary>
+ 画像ルートパスの取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHARGEResult._dcSK121">
+	<summary>
+ レシートプリンタコントロール
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHARGEResult._dcICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmCHARGEResult._dcMCH3000">
+	<summary>
+ MCH3000ユニット制御
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHARGEResult.SK121">
+	<summary>
+ レシートプリンター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHARGEResult.ICR700">
+	<summary>
+ ICR700リーダライター制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHARGEResult.MCH3000">
+	<summary>
+ MCH3000ユニット制御
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmCHARGEResult.Err">
+	<summary>
+ エラー発生
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult.frmCHARGE_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult.frmCHARGE01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult.btnCheckInOut_Click(System.Object,System.EventArgs)">
+	<summary>
+ チェックイン/チェックアウト
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult.btnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult.timSound_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_音声１
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult.timSound2_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_音声２
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult.timClose_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_終了
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult.timBlinkText_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_点滅テキスト
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult.timBlinkText2_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_点滅テキスト２
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult.timReceipt_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_領収書発行
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmCHARGEResult.EjectPreCard">
+	<summary>
+ 排出停止中のカードを排出
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmMSGBOXEx04._intEndCnt">
+	<summary>
+ 画面終了カウント(10で終了)
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.frmMSGBOXEx04.Reply">
+	<summary>
+ 確認メッセージ返答
+ </summary>
+	<value>【OK】True【キャンセル】False</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx04.#ctor(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="Msg">メッセージ内容</param>
+	<param name="MsgType">【0】情報【1】確認【2】エラー【3】注意 </param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx04.AdjustButtonPosition">
+	<summary>
+ OKボタンの位置をダイアログの真ん中に表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx04.frmMSGBOX01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx04.btnOK_Click(System.Object,System.EventArgs)">
+	<summary>
+ OKボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx04.btnOK_PerformClick">
+	<summary>
+ OKボタンの実行
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx04.btnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ キャンセルボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx04.btnExit_Click(System.Object,System.EventArgs)">
+	<summary>
+ ×ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmMSGBOXEx04.Timer1_Tick(System.Object,System.EventArgs)">
+	<summary>
+ タイマー_Tick
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

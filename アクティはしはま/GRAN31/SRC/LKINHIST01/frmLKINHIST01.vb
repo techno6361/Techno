@@ -1,0 +1,642 @@
+﻿Imports Techno.DataBase
+Imports System.ComponentModel
+
+Public Class frmLKINHIST01
+
+#Region "▼宣言部"
+
+    ' 1ページに表示する最大行数(グリッド)
+    Const MAX_ROW_NUM = 16
+
+    ' 1ページに表示する最大行数(帳票)
+    Const MAX_EXCEL_ROW_NUM = 4
+
+    ' 開始行数
+    Const HEADER_MARGIN = 8
+
+    ' 罫線の視点、終点
+    Const LINE_COL_INDEX_S = 2
+    Const LINE_COL_INDEX_E = 10
+
+    ' OPEN/SAVEファイル
+    Const REPORT_NAME = "残高クリア履歴"
+
+    ' フォーム名
+    Const FORM_NAME = "残高クリア履歴"
+
+    ' リスト(全体)
+    Dim _list As BindingList(Of LKINTRA_View) = New BindingList(Of LKINTRA_View)
+
+    ' 現在のページ
+    Dim _currentPage As Integer = 0
+
+    ' 処理の中断フラグ
+    Dim _abort As Boolean = False
+
+#End Region
+
+#Region "▼コンストラクタ"
+
+    Public Sub New()
+        Try
+            ' この呼び出しはデザイナーで必要です。
+            InitializeComponent()
+
+            MyBase.l_Title_FormName = FORM_NAME
+
+            ' InitializeComponent() 呼び出しの後で初期化を追加します。
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Sub
+
+    Public Sub New(ByVal iDB As IDatabase.IMethod)
+        Try
+            ' この呼び出しはデザイナーで必要です。
+            InitializeComponent()
+
+            MyBase.l_Title_FormName = FORM_NAME
+
+            ' InitializeComponent() 呼び出しの後で初期化を追加します。
+
+            'データベース接続情報を引き継ぐ
+            iDatabase = iDB
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Sub
+
+#End Region
+
+#Region "▼イベント定義"
+
+    ''' <summary>
+    ''' フォーム_Load
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Private Sub frmPRINT04_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Try
+            '画面初期設定
+            Init()
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message.ToString, Me.Text, MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' 営業日付テキストボックス_ValueChanged
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Private Sub dtpSEATDT_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtpStaSEATDT.ValueChanged, dtpEndSEATDT.ValueChanged
+        Try
+            If Me.dtpStaSEATDT.Text.Equals(Me.dtpEndSEATDT.Text) Then
+
+            Else
+
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message.ToString, Me.Text, MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' 期間コンボボックス
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Private Sub cmbTerm_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbTerm.SelectedIndexChanged
+        Dim intYear As Integer = Now.Date.Year
+        Dim intMonth As Integer = Now.Date.Month
+        Dim intDay As Integer = Now.Date.Day
+        Try
+            Me.dtpStaSEATDT.Enabled = False
+            Me.dtpEndSEATDT.Enabled = False
+
+            Select Case Me.cmbTerm.SelectedIndex
+                Case 0      '任意入力
+                    Me.dtpStaSEATDT.Text = intYear.ToString & "/" & intMonth.ToString.PadLeft(2, "0"c) & "/" & intDay.ToString.PadLeft(2, "0"c)
+                    Me.dtpEndSEATDT.Text = intYear.ToString & "/" & intMonth.ToString.PadLeft(2, "0"c) & "/" & intDay.ToString.PadLeft(2, "0"c)
+                    Me.dtpStaSEATDT.Enabled = True
+                    Me.dtpEndSEATDT.Enabled = True
+                    Me.dtpStaSEATDT.Focus()
+                    Me.dtpStaSEATDT.Select()
+                Case 1      '今月
+                    Me.dtpStaSEATDT.Text = intYear.ToString & "/" & intMonth.ToString.PadLeft(2, "0"c) & "/01"
+                    Me.dtpEndSEATDT.Text = intYear.ToString & "/" & intMonth.ToString.PadLeft(2, "0"c) & "/" & intDay.ToString.PadLeft(2, "0"c)
+                Case 2      '前月
+                    intMonth -= 1
+                    If intMonth.Equals(0) Then
+                        intMonth = 12
+                        intYear -= 1
+                    End If
+                    Me.dtpStaSEATDT.Text = intYear.ToString & "/" & intMonth.ToString.PadLeft(2, "0"c) & "/01"
+                    Me.dtpEndSEATDT.Text = intYear.ToString & "/" & intMonth.ToString.PadLeft(2, "0"c) & "/" & DateTime.DaysInMonth(intYear, intMonth).ToString.PadLeft(2, "0"c)
+                Case 3      '今年
+                    Me.dtpStaSEATDT.Text = intYear.ToString & "/01/01"
+                    Me.dtpEndSEATDT.Text = intYear.ToString & "/" & intMonth.ToString.PadLeft(2, "0"c) & "/" & intDay.ToString.PadLeft(2, "0"c)
+                Case 4      '前年
+                    intYear -= 1
+                    Me.dtpStaSEATDT.Text = intYear.ToString & "/01/01"
+                    Me.dtpEndSEATDT.Text = intYear.ToString & "/12/31"
+            End Select
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message.ToString, Me.Text, MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' 印刷ボタン_Click
+    ''' </summary>
+    ''' <remarks></remarks>
+    Protected Overrides Sub func8()
+        Try
+            Cursor = Cursors.WaitCursor
+
+            Me.pnlPrintStatus.Show(BaseControl.StatusPanel.eShowOption.LOAD)
+
+            ' 一覧の印刷
+            btnFIND.PerformClick()
+            If Not PrintList(_list) Then
+                Me.pnlPrintStatus.Visible = False
+                Exit Sub
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message.ToString, Me.Text, MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            Me.pnlPrintStatus.Visible = False
+            Cursor = Cursors.Default
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' 検索ボタン
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Private Sub btnFIND_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnFIND.Click
+        Try
+            Dim date1 = Me.dtpStaSEATDT.Value.ToString("yyyy/MM/dd")
+            Dim date2 = Me.dtpEndSEATDT.Value.AddDays(1).ToString("yyyy/MM/dd")
+
+            Cursor = Cursors.WaitCursor
+            Me.pnlPrintStatus.Show(BaseControl.StatusPanel.eShowOption.LOAD)
+            Me.Refresh()
+            Me.Update()
+
+            If Not GetLKINTRA(date1, date2) Then
+                Using frm As New frmMSGBOX01("対象のデータがありません。", 3)
+                    frm.ShowDialog()
+                    AllPaging_Disabled()
+                    Me.pnlPrintStatus.Visible = False
+                End Using
+                Exit Sub
+            End If
+
+            Me.lblPage.Enabled = True
+            Me.lblMaxPage.Enabled = True
+
+        Catch ex As Exception
+            Throw ex
+        Finally
+            Cursor = Cursors.Default
+            Me.pnlPrintStatus.Visible = False
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' Prevボタン
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Private Sub btnPrev_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPrev.Click
+        Try
+            _currentPage -= 1
+            ApplyGrid(_currentPage)
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' Nextボタン
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Private Sub btnNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNext.Click
+        Try
+            _currentPage += 1
+            ApplyGrid(_currentPage)
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' ESCキーで処理の中断
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Private Sub frmPRINT08_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.Escape Then
+            _abort = True
+        End If
+    End Sub
+
+#End Region
+
+#Region "▼関数定義"
+
+    ''' <summary>
+    ''' 画面初期設定
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub Init()
+        Try
+            '一覧
+            Me.tspFunc3.Enabled = False
+            '印刷
+            Me.tspFunc8.Enabled = True
+            '削除
+            Me.tspFunc9.Enabled = False
+            '画面印刷
+            Me.tspFunc10.Enabled = True
+            'クリア
+            Me.tspFunc11.Enabled = False
+            '登録
+            Me.tspFunc12.Enabled = False
+
+            Me.cmbTerm.SelectedIndex = 0
+
+            _currentPage = 0
+
+            AllPaging_Disabled()
+
+            ' ステータスパネルの初期化
+            Me.pnlPrintStatus.Init(Me)
+
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' 入金トランを取得し、グリッドに反映
+    ''' </summary>
+    ''' <param name="date1"></param>
+    ''' <param name="date2"></param>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
+    Private Function GetLKINTRA(ByVal date1 As String, ByVal date2 As String) As Boolean
+        Dim sql As New System.Text.StringBuilder
+        Try
+            ' 初期化
+            _currentPage = 0
+            _list.Clear()
+
+            ' 入金トラン
+            sql.Clear()
+            sql.Append(" SELECT ")
+            sql.Append(" *")
+            sql.Append(" FROM LKINTRA")
+            sql.Append(String.Format(" WHERE INSDTM BETWEEN '{0}' AND '{1}'", date1, date2))
+            sql.Append(" ORDER BY LKINNO")
+            Dim dt = iDatabase.ExecuteRead(sql.ToString())
+
+            If dt.Rows.Count <= 0 Then Return False
+
+            Dim query = From x In dt.AsEnumerable
+                               Select New With {
+                                   .INSDTM = DateTime.Parse(x("INSDTM").ToString),
+                                   .MANNO = x("MANNO").ToString,
+                                   .MANNM = x("MANNM").ToString,
+                                   .ZANKN = CInt(x("ZANKN")),
+                                   .PREZANKN = CInt(x("PREZANKN")),
+                                   .SRTPO = CInt(x("SRTPO")),
+                                   .CARDLIMIT = x("CARDLIMIT").ToString,
+                                   .STFNAME = x("STFNAME").ToString,
+                                   .CLRKBN = CInt(x("CLRKBN"))
+                                }
+
+            If Not query.Any Then Return False
+
+            ' データグリッドに反映
+            For Each row In query
+
+                Dim data = New LKINTRA_View
+
+                data.INSDTM1 = row.INSDTM.ToString("yyyy/MM/dd")
+                data.INSDTM2 = row.INSDTM.ToString("HH:mm")
+                data.MANNO = row.MANNO
+                data.MANNM = row.MANNM
+                data.ZANKN = row.ZANKN
+                data.PREZANKN = row.PREZANKN
+                data.SRTPO = row.SRTPO
+                data.CARDLIMIT = String.Format("{0}/{1}/{2}", row.CARDLIMIT.Substring(0, 4), row.CARDLIMIT.Substring(4, 2), row.CARDLIMIT.Substring(6, 2))
+                data.STFNAME = row.STFNAME
+                If row.CLRKBN.Equals(0) Then
+                    data.CLRKBNNM = "残高ﾌﾟﾚﾐｱﾑ移行"
+                    data.PREZANKN = 0
+                Else
+                    data.CLRKBNNM = "残高クリア"
+                End If
+
+                _list.Add(data)
+
+            Next
+
+            ApplyGrid(0)
+
+            If _list.Count > MAX_ROW_NUM Then
+                btnNext_Enabled()
+            Else
+                btnNext_Disabled()
+            End If
+
+            Return True
+
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
+
+    ''' <summary>
+    ''' グリッドに表示中のデータを印刷
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Function PrintList(ByVal list As BindingList(Of LKINTRA_View)) As Boolean
+        Dim excel = New UIExcel
+        Try
+            If Not list.Any Then Return False
+
+            ' *** 帳票の出力 ***
+
+            Dim strReportName As String = REPORT_NAME
+            Dim strOpenReportName As String = UIUtility.FILE_PATH.TEMPLATE & "\" & strReportName
+            Dim strSaveReportName As String = UIUtility.FILE_PATH.REPORT & "\" & strReportName _
+                                             & Now.Year.ToString & Now.Month.ToString & Now.Day.ToString _
+                                             & Now.Hour.ToString & Now.Minute.ToString & Now.Second.ToString & ".xls"
+
+            ' ファイルを開く
+            excel.Open(strOpenReportName, 1, False)
+
+            ' ステータスを表示
+            Me.pnlPrintStatus.Show(BaseControl.StatusPanel.eShowOption.WRITE_ESC, list.Count)
+
+            ' 罫線の始点と終点を設定
+            excel.SetLineRange(LINE_COL_INDEX_S, LINE_COL_INDEX_E)
+
+            ' 出力日
+            excel.Cells(1, 10) = String.Format("出力日：{0}", DateTime.Now.ToString("yyyy/MM/dd"))
+
+            ' 対象日付
+            Dim strStaSEATDT = Me.dtpStaSEATDT.Value.ToString("yyyy/MM/dd")
+            Dim strEndSEATDT = Me.dtpEndSEATDT.Value.ToString("yyyy/MM/dd")
+            excel.Cells(5, 2) = String.Format("対象日付：{0}～{1}", strStaSEATDT, strEndSEATDT)
+
+            ' 日付でグループ化
+            Dim group_list = list.GroupBy(Function(x) x.INSDTM1)
+
+            Dim index = 1 ' 件数
+            Dim row_index = HEADER_MARGIN ' 行数
+            Dim offset = MAX_EXCEL_ROW_NUM + 1 ' 罫線を入れる行数
+
+            For Each day_rows In group_list
+
+                For Each row In day_rows
+
+                    ' 処理の中断を判定
+                    If IsAbort() Then Exit For
+
+                    ' 取引日
+                    excel.Cells(row_index, 2) = row.INSDTM1
+
+                    ' 時間
+                    excel.Cells(row_index, 3) = row.INSDTM2
+
+                    ' 顧客番号
+                    excel.Cells(row_index, 4) = row.MANNO
+
+                    ' 顧客氏名
+                    excel.Cells(row_index, 5) = row.MANNM
+
+                    ' 残金額
+                    excel.Cells(row_index, 6) = row.ZANKN.ToString("N0")
+
+                    ' P)残金額
+                    If row.CLRKBNNM.Equals("残高ﾌﾟﾚﾐｱﾑ移行") Then
+                        excel.Cells(row_index, 7) = "残高ﾌﾟﾚﾐｱﾑ移行"
+                    Else
+                        excel.Cells(row_index, 7) = row.PREZANKN.ToString("N0")
+                    End If
+
+                    ' ポイント
+                    excel.Cells(row_index, 8) = row.SRTPO.ToString("N0")
+
+                    ' 有効期限
+                    excel.Cells(row_index, 9) = row.CARDLIMIT
+
+                    ' 担当者
+                    excel.Cells(row_index, 10) = row.STFNAME
+
+                    Me.pnlPrintStatus.Count = index
+
+                    index += 1
+                    row_index += 1
+
+                    ' 罫線
+                    If row_index - HEADER_MARGIN + 1 = offset Then
+                        excel.DrawBoldLine(row_index)
+                        offset += MAX_EXCEL_ROW_NUM
+                    End If
+
+                Next
+
+                '' １日の集計
+                'excel.DrawLine(row_index)
+                'excel.Cells(row_index, 5) = "【合　計】"
+                'excel.Cells(row_index, 6) = day_rows.Select(Function(x) x.NKNKN).Sum().ToString("N0")
+                'excel.Cells(row_index, 7) = day_rows.Select(Function(x) x.PREMKN).Sum().ToString("N0")
+                'excel.Cells(row_index, 8) = day_rows.Select(Function(x) x.POINT).Sum().ToString("N0")
+                'excel.Cells(row_index, 10) = day_rows.Select(Function(x) x.NKNKN).Sum().ToString("N0")
+                'excel.Cells(row_index, 11) = day_rows.Select(Function(x) x.TURIKN).Sum().ToString("N0")
+                'excel.Cells(row_index, 13) = day_rows.Select(Function(x) x.ZANAKN).Sum().ToString("N0")
+                'excel.Cells(row_index, 14) = day_rows.Select(Function(x) x.ZANBKN).Sum().ToString("N0")
+
+                'row_index += 1
+
+                '' 罫線
+                'If row_index - header_margin + 1 = offset Then
+                '    excel.DrawBoldLine(row_index)
+                '    offset += MAX_EXCEL_ROW_NUM
+                'End If
+
+            Next
+
+            '' 総合計
+            'excel.DrawDoubleLine(row_index)
+
+            'excel.Cells(row_index, 5) = "【総　合　計】"
+            'excel.Cells(row_index, 6) = list.Select(Function(x) x.NKNKN).Sum().ToString("N0")
+            'excel.Cells(row_index, 7) = list.Select(Function(x) x.PREMKN).Sum().ToString("N0")
+            'excel.Cells(row_index, 8) = list.Select(Function(x) x.POINT).Sum().ToString("N0")
+            'excel.Cells(row_index, 10) = list.Select(Function(x) x.NKNKN).Sum().ToString("N0")
+            'excel.Cells(row_index, 11) = list.Select(Function(x) x.TURIKN).Sum().ToString("N0")
+            'excel.Cells(row_index, 13) = list.Select(Function(x) x.ZANAKN).Sum().ToString("N0")
+            'excel.Cells(row_index, 14) = list.Select(Function(x) x.ZANBKN).Sum().ToString("N0")
+
+            '' 罫線
+            'If row_index - header_margin + 1 = offset Then
+            '    excel.DrawBoldLine(row_index)
+            '    offset += MAX_EXCEL_ROW_NUM
+            'End If
+
+            'ファイル保存
+            excel.SaveAs(strSaveReportName, True)
+
+            Return True
+
+        Catch ex As Exception
+            excel.Dispose()
+            Throw ex
+        End Try
+    End Function
+
+    ''' <summary>
+    ''' ページングとグリッド処理
+    ''' </summary>
+    ''' <param name="page"></param>
+    ''' <remarks></remarks>
+    Private Sub ApplyGrid(ByVal page As Integer)
+
+        Me.dgvNKNTRN.ClearGrid()
+
+        ' グリッドにデータをバインド
+        Dim currentList = New BindingList(Of LKINTRA_View)
+        Me.dgvNKNTRN.DataSource = currentList
+
+        ' ページング処理
+        Dim currentIndex = page * MAX_ROW_NUM
+        Dim take_list = _list.Skip(currentIndex).Take(MAX_ROW_NUM)
+        For Each x In take_list
+            currentList.Add(x)
+        Next
+
+        ' 最大ページ数
+        Dim maxPage = Math.Ceiling(_list.Count / MAX_ROW_NUM)
+
+        ' コントロールの制御
+        If _currentPage > 0 Then
+            btnPrev_Enabled()
+        Else
+            btnPrev_Disabled()
+        End If
+
+        If page < maxPage - 1 Then
+            btnNext_Enabled()
+        Else
+            btnNext_Disabled()
+        End If
+
+        ' ラベルに反映
+        lblMaxPage.Text = maxPage.ToString.PadLeft(2, "0"c)
+        lblPage.Text = (page + 1).ToString.PadLeft(2, "0"c)
+
+        lblMaxCount.Text = _list.Count.ToString
+        lblStaCount.Text = (currentIndex + 1).ToString
+        lblEndCount.Text = (currentIndex + currentList.Count).ToString
+
+    End Sub
+
+    ''' <summary>
+    ''' 次へボタンの有効化
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub btnNext_Enabled()
+        btnNext.Enabled = True
+        btnNext.BackColor = Color.Yellow
+    End Sub
+
+    ''' <summary>
+    ''' 次へボタンの無効化
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub btnNext_Disabled()
+        btnNext.Enabled = False
+        btnNext.BackColor = Color.Silver
+    End Sub
+
+    ''' <summary>
+    ''' 前へボタンの有効化
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub btnPrev_Enabled()
+        btnPrev.Enabled = True
+        btnPrev.BackColor = Color.Yellow
+    End Sub
+
+    ''' <summary>
+    ''' 前へボタンの無効化
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub btnPrev_Disabled()
+        btnPrev.Enabled = False
+        btnPrev.BackColor = Color.Silver
+    End Sub
+
+    ''' <summary>
+    ''' ページング処理の無効化
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub AllPaging_Disabled()
+        btnPrev_Disabled()
+        btnNext_Disabled()
+        Me.lblPage.Text = "1"
+        Me.lblMaxPage.Text = "1"
+        Me.lblMaxCount.Text = "0"
+        Me.lblStaCount.Text = "0"
+        Me.lblEndCount.Text = "0"
+    End Sub
+
+#End Region
+
+#Region "▼ ヘルパー"
+
+    ''' <summary>
+    ''' 処理の中断が呼ばれた
+    ''' </summary>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
+    Private Function IsAbort() As Boolean
+        Application.DoEvents()
+        If _abort Then
+            _abort = False
+            Return True
+        End If
+        Return False
+    End Function
+
+    ''' <summary>
+    ''' 処理中断の初期化
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub ResetAbort()
+        _abort = False
+    End Sub
+
+#End Region
+
+
+End Class

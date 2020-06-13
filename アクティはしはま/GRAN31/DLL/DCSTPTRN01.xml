@@ -1,0 +1,113 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DCSTPTRN01
+</name>
+</assembly>
+<members>
+<member name="M:GRAN31.UI.frmDCSTPTRN01.frmENTHIST01_Load(System.Object,System.EventArgs)">
+	<summary>
+ 開始処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDCSTPTRN01.func11">
+	<summary>
+ F11クリアボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDCSTPTRN01.func12">
+	<summary>
+ F12登録ボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDCSTPTRN01.btnPrev_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン押下_前のページ
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDCSTPTRN01.btnNext_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン押下_次のページ
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDCSTPTRN01.dgvCSMAST_CellClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ 行選択でチェックボックスON/OFF
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDCSTPTRN01.Init">
+	<summary>
+ 画面初期化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDCSTPTRN01.GetDCSTPTRN(System.Int32)">
+	<summary>
+ 停止中カードトランの取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDCSTPTRN01.DeleteDCSTPTRN">
+	<summary>
+ DCSTPTRNの削除処理
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDCSTPTRN01.InsertOldList">
+	<summary>
+ 復元用データを新規作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDCSTPTRN01.UpdateOldList">
+	<summary>
+ 復元用データを更新
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDCSTPTRN01.GetOldCheck(System.String)">
+	<summary>
+ ページング前のチェック状態を復元
+ </summary>
+	<param name="key"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDCSTPTRN01.ChkUPDDTM">
+	<summary>
+ 他端末からの更新チェック
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDCSTPTRN01.GetCurrentUPDDTM(System.String)">
+	<summary>
+ 現在の最新更新日時を取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDCSTPTRN01.ShowErrorMessage(System.String)">
+	<summary>
+ エラーメッセージの表示
+ </summary>
+	<param name="msg"></param>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

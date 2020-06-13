@@ -1,0 +1,8 @@
+D:\GRAN29\SRC\IPCSample\bin\Debug\IPCSample.dll
+D:\GRAN29\SRC\IPCSample\bin\Debug\IPCSample.pdb
+D:\GRAN29\SRC\IPCSample\bin\Debug\IPCSample.xml
+D:\GRAN29\SRC\IPCSample\obj\Debug\IPCSample.Resources.resources
+D:\GRAN29\SRC\IPCSample\obj\Debug\IPCSample.vbproj.GenerateResource.Cache
+D:\GRAN29\SRC\IPCSample\obj\Debug\IPCSample.dll
+D:\GRAN29\SRC\IPCSample\obj\Debug\IPCSample.xml
+D:\GRAN29\SRC\IPCSample\obj\Debug\IPCSample.pdb

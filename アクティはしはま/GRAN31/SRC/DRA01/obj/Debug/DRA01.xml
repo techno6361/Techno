@@ -1,0 +1,407 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DRA01
+</name>
+</assembly>
+<members>
+<member name="M:GRAN31.UI.frmDRA01.frmDRA01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.func11">
+	<summary>
+ F11クリアボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.btnOpenDwa_Click(System.Object,System.EventArgs)">
+	<summary>
+ ドロアオープンボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.txts_L_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+ テキストボックス_一つでも有効な値ならレジ金登録ボタンを有効化
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.txts_R_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+ テキストボックス_一つでも有効な値ならレジ金登録ボタンを有効化
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.btnRegister_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン_レジ金登録ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.dtpDate_ValueChanged(System.Object,System.EventArgs)">
+	<summary>
+ カレンダー_値変更(初回起動時は起動しない)
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.btnCheck_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン_チェック実施
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.dgvDRATRN_CellFormatting(System.Object,System.Windows.Forms.DataGridViewCellFormattingEventArgs)">
+	<summary>
+ 列の書式
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.dgvDRATRN_SelectionChanged(System.Object,System.EventArgs)">
+	<summary>
+ 列を選択不可にする
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.Start">
+	<summary>
+ メイン開始処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.Init">
+	<summary>
+ 画面初期化処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.ReadAll">
+	<summary>
+ すべて読み込み
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.ReadCheck(System.Boolean)">
+	<summary>
+ すべて読み込み
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.ClearAllText">
+	<summary>
+ すべてのテキストボックスの初期化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.GetDRATRN_L">
+	<summary>
+ DRATRNを取得しテキストボックスに結果を表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.GetDRATRN_R">
+	<summary>
+ DRATRNを取得しテキストボックスに結果を表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.GetURIAGE">
+	<summary>
+ 売り上げ情報を取得しグリッドに一覧表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.getMANNM(System.String,System.String)">
+	<summary>
+ 顧客氏名かスクール生氏名を取得する
+ </summary>
+	<param name="manno"></param>
+	<param name="sclmanno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.GetCHECK">
+	<summary>
+ チェック状況を取得しグリッドに表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.InsertDRATRN(GRAN31.UI.frmDRA01.INSERT_DRATRN_MODE)">
+	<summary>
+ DRATRNにINSERT
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.UpdateDRATRN">
+	<summary>
+ DRATRNにUPDATE
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.UpdateDRAKBN">
+	<summary>
+ DUDNTRN, UDNTRN, DENTRA にDRAKBNを済にUPDATE
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.GetMaxUDNNO">
+	<summary>
+ UDNNO の最大値を取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.GetCurrentUPDDTM">
+	<summary>
+ 現在の最新更新日時を取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.IsDBUpdated(System.Boolean)">
+	<summary>
+ ' 他端末からの更新チェック(メッセージ機能付き)
+ </summary>
+	<param name="msg"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.SaveUPDDTM">
+	<summary>
+ 最新日時を設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.GetSelectedDateText">
+	<summary>
+ 選択中の日付文字列を取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.CalcLeft">
+	<summary>
+ 左側のフィールドを計算して合計値を表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.CalcRight">
+	<summary>
+ 右側のフィールドを計算して合計値を表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01.GetTextBox_L">
+	<summary>
+ テキストボックスの配列を取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.frmDRA01_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.func11">
+	<summary>
+ F11クリアボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.txts_L_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+ テキストボックス_一つでも有効な値ならレジ金登録ボタンを有効化
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.txts_R_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+ テキストボックス_一つでも有効な値ならレジ金登録ボタンを有効化
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.btnRegister_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン_レジ金登録ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.dtpDate_ValueChanged(System.Object,System.EventArgs)">
+	<summary>
+ カレンダー_値変更(初回起動時は起動しない)
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.btnCheck_Click(System.Object,System.EventArgs)">
+	<summary>
+ ボタン_チェック実施
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.dgvDRATRN_CellFormatting(System.Object,System.Windows.Forms.DataGridViewCellFormattingEventArgs)">
+	<summary>
+ 列の書式
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.dgvDRATRN_SelectionChanged(System.Object,System.EventArgs)">
+	<summary>
+ 列を選択不可にする
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.Start">
+	<summary>
+ メイン開始処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.Init">
+	<summary>
+ 画面初期化処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.ReadAll">
+	<summary>
+ すべて読み込み
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.ReadCheck(System.Boolean)">
+	<summary>
+ すべて読み込み
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.ClearAllText">
+	<summary>
+ すべてのテキストボックスの初期化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.GetDRATRN_L">
+	<summary>
+ DRATRNを取得しテキストボックスに結果を表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.GetDRATRN_R">
+	<summary>
+ DRATRNを取得しテキストボックスに結果を表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.GetURIAGE">
+	<summary>
+ 売り上げ情報を取得しグリッドに一覧表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.getMANNM(System.String,System.String)">
+	<summary>
+ 顧客氏名かスクール生氏名を取得する
+ </summary>
+	<param name="manno"></param>
+	<param name="sclmanno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.GetCHECK">
+	<summary>
+ チェック状況を取得しグリッドに表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.InsertDRATRN(GRAN31.UI.frmDRA01xx.INSERT_DRATRN_MODE)">
+	<summary>
+ DRATRNにINSERT
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.UpdateDRATRN">
+	<summary>
+ DRATRNにUPDATE
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.UpdateDRAKBN">
+	<summary>
+ DUDNTRN, UDNTRN, DENTRA にDRAKBNを済にUPDATE
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.GetMaxUDNNO">
+	<summary>
+ UDNNO の最大値を取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.GetCurrentUPDDTM">
+	<summary>
+ 現在の最新更新日時を取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.IsDBUpdated(System.Boolean)">
+	<summary>
+ ' 他端末からの更新チェック(メッセージ機能付き)
+ </summary>
+	<param name="msg"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.SaveUPDDTM">
+	<summary>
+ 最新日時を設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.GetSelectedDateText">
+	<summary>
+ 選択中の日付文字列を取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.CalcLeft">
+	<summary>
+ 左側のフィールドを計算して合計値を表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.CalcRight">
+	<summary>
+ 右側のフィールドを計算して合計値を表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmDRA01xx.GetTextBox_L">
+	<summary>
+ テキストボックスの配列を取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="T:GRAN31.UI.DRATRN_View">
+	<summary>
+ データモデル_レジ情報
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.URIAGE_View">
+	<summary>
+ データモデル_売り上げ情報
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.CHECK_View">
+	<summary>
+ データモデル_チェック状況
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN31.UI.PriceTextBox">
+	<summary>
+ テキストボックスと価格を保持するクラス
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

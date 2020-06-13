@@ -1,0 +1,584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0888F2AE-582A-4876-8C62-5B2A61433D56}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GRAN31.UI.My.MyApplication</StartupObject>
+    <RootNamespace>GRAN31.UI</RootNamespace>
+    <AssemblyName>AUTOFRONT01</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\DLL\</OutputPath>
+    <DocumentationFile>AUTOFRONT01.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AUTOFRONT01.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\DLL\</OutputPath>
+    <DocumentationFile>AUTOFRONT01.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AUTOFRONT01.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>atm01.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Itanium'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Itanium\Debug\</OutputPath>
+    <DocumentationFile>AUTOFRONT01.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Itanium'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Itanium\Release\</OutputPath>
+    <DocumentationFile>AUTOFRONT01.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>AUTOFRONT01.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>AUTOFRONT01.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="MSGBOX01, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <ExecutableExtension>.exe</ExecutableExtension>
+      <HintPath>..\..\DLL\MSGBOX01.exe</HintPath>
+    </Reference>
+    <Reference Include="Receipt, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\Receipt.dll</HintPath>
+    </Reference>
+    <Reference Include="REQUESTCARD, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <ExecutableExtension>.exe</ExecutableExtension>
+      <HintPath>..\..\DLL\REQUESTCARD.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="TECHNO.CONTROL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\TECHNO.CONTROL.dll</HintPath>
+    </Reference>
+    <Reference Include="Techno.DataBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\Techno.DataBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Techno.DeviceControls.AD1Control, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\Techno.DeviceControls.AD1Control.dll</HintPath>
+    </Reference>
+    <Reference Include="Techno.DeviceControls.ICR700Control, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\Techno.DeviceControls.ICR700Control.dll</HintPath>
+    </Reference>
+    <Reference Include="Techno.DeviceControls.KU-A201, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\Techno.DeviceControls.KU-A201.dll</HintPath>
+    </Reference>
+    <Reference Include="Techno.DeviceControls.MCH3000Control, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\Techno.DeviceControls.MCH3000Control.dll</HintPath>
+    </Reference>
+    <Reference Include="Techno.DeviceControls.SC1708Control, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\Techno.DeviceControls.SC1708Control.dll</HintPath>
+    </Reference>
+    <Reference Include="Techno.DeviceControls.SK121Control, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\Techno.DeviceControls.SK121Control.dll</HintPath>
+    </Reference>
+    <Reference Include="Techno.DeviceControls.STR610Control, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\Techno.DeviceControls.STR610Control.dll</HintPath>
+    </Reference>
+    <Reference Include="Techno.DeviceControls.V31SerialControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\Techno.DeviceControls.V31SerialControl.dll</HintPath>
+    </Reference>
+    <Reference Include="TECHNO.FORM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\TECHNO.FORM.dll</HintPath>
+    </Reference>
+    <Reference Include="UIUtility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\UIUtility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonSettings.vb" />
+    <Compile Include="frmAD1.Designer.vb">
+      <DependentUpon>frmAD1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAD1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase.designer.vb">
+      <DependentUpon>frmBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCHARGEResult02.designer.vb">
+      <DependentUpon>frmCHARGEResult02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCHARGEResult02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCHECKRESULT.Designer.vb">
+      <DependentUpon>frmCHECKRESULT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCHECKRESULT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCM.Designer.vb">
+      <DependentUpon>frmCM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDummy.Designer.vb">
+      <DependentUpon>frmDummy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDummy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmError01.Designer.vb">
+      <DependentUpon>frmError01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmError01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHAKKEN01_STR610.Designer.vb">
+      <DependentUpon>frmHAKKEN01_STR610.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHAKKEN01_STR610.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMSGBOXEx.designer.vb">
+      <DependentUpon>frmMSGBOXEx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMSGBOXEx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMSGBOXEx02.Designer.vb">
+      <DependentUpon>frmMSGBOXEx02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMSGBOXEx02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNKNTRN.Designer.vb">
+      <DependentUpon>frmNKNTRN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNKNTRN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlaySelect01.Designer.vb">
+      <DependentUpon>frmPlaySelect01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlaySelect01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPRINTER01.Designer.vb">
+      <DependentUpon>frmPRINTER01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPRINTER01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREQUESTCARDEx.designer.vb">
+      <DependentUpon>frmREQUESTCARDEx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmREQUESTCARDEx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSALES01.Designer.vb">
+      <DependentUpon>frmSALES01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSALES01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectCharge.Designer.vb">
+      <DependentUpon>frmSelectCharge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectCharge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSYSMENU01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSYSMENU01.Designer.vb">
+      <DependentUpon>frmSYSMENU01.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Images.vb" />
+    <Compile Include="Models.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frmSEATINFOEx.Designer.vb">
+      <DependentUpon>frmSEATINFOEx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSEATINFOEx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCHARGEEx.Designer.vb">
+      <DependentUpon>frmCHARGEEx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCHARGEEx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCHARGEResult.Designer.vb">
+      <DependentUpon>frmCHARGEResult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCHARGEResult.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEJECTCARD.designer.vb">
+      <DependentUpon>frmEJECTCARD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEJECTCARD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMENUEx.Designer.vb">
+      <DependentUpon>frmMENUEx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMENUEx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMSGBOXEx03.Designer.vb">
+      <DependentUpon>frmMSGBOXEx03.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMSGBOXEx03.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NKNTRN_View.vb" />
+    <Compile Include="Sound.vb" />
+    <Compile Include="frmCHECKRESULT02.Designer.vb">
+      <DependentUpon>frmCHECKRESULT02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCHECKRESULT02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSlot.Designer.vb">
+      <DependentUpon>frmSlot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSlot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xofshift128.vb" />
+    <Compile Include="frmMSGBOXEx04.Designer.vb">
+      <DependentUpon>frmMSGBOXEx04.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMSGBOXEx04.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSlot2.Designer.vb">
+      <DependentUpon>frmSlot2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSlot2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEJECTCARD_STR610.designer.vb">
+      <DependentUpon>frmEJECTCARD_STR610.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEJECTCARD_STR610.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSYSMENU01_STR610.Designer.vb">
+      <DependentUpon>frmSYSMENU01_STR610.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSYSMENU01_STR610.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHAKKEN01.Designer.vb">
+      <DependentUpon>frmHAKKEN01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHAKKEN01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNAMELESS01.designer.vb">
+      <DependentUpon>frmNAMELESS01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNAMELESS01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEJECTCARD_Restore.designer.vb">
+      <DependentUpon>frmEJECTCARD_Restore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEJECTCARD_Restore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmINFOEx.designer.vb">
+      <DependentUpon>frmINFOEx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmINFOEx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmINFOEx02.designer.vb">
+      <DependentUpon>frmINFOEx02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmINFOEx02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAD1.resx">
+      <DependentUpon>frmAD1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBase.resx">
+      <DependentUpon>frmBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCHARGEResult02.resx">
+      <DependentUpon>frmCHARGEResult02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCHECKRESULT.resx">
+      <DependentUpon>frmCHECKRESULT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCM.resx">
+      <DependentUpon>frmCM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDummy.resx">
+      <DependentUpon>frmDummy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmError01.resx">
+      <DependentUpon>frmError01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHAKKEN01_STR610.resx">
+      <DependentUpon>frmHAKKEN01_STR610.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMSGBOXEx.resx">
+      <DependentUpon>frmMSGBOXEx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMSGBOXEx02.resx">
+      <DependentUpon>frmMSGBOXEx02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNKNTRN.resx">
+      <DependentUpon>frmNKNTRN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlaySelect01.resx">
+      <DependentUpon>frmPlaySelect01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPRINTER01.resx">
+      <DependentUpon>frmPRINTER01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREQUESTCARDEx.resx">
+      <DependentUpon>frmREQUESTCARDEx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSALES01.resx">
+      <DependentUpon>frmSALES01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectCharge.resx">
+      <DependentUpon>frmSelectCharge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSYSMENU01.resx">
+      <DependentUpon>frmSYSMENU01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSEATINFOEx.resx">
+      <DependentUpon>frmSEATINFOEx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCHARGEEx.resx">
+      <DependentUpon>frmCHARGEEx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCHARGEResult.resx">
+      <DependentUpon>frmCHARGEResult.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEJECTCARD.resx">
+      <DependentUpon>frmEJECTCARD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMENUEx.resx">
+      <DependentUpon>frmMENUEx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMSGBOXEx03.resx">
+      <DependentUpon>frmMSGBOXEx03.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCHECKRESULT02.resx">
+      <DependentUpon>frmCHECKRESULT02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSlot.resx">
+      <DependentUpon>frmSlot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMSGBOXEx04.resx">
+      <DependentUpon>frmMSGBOXEx04.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSlot2.resx">
+      <DependentUpon>frmSlot2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEJECTCARD_STR610.resx">
+      <DependentUpon>frmEJECTCARD_STR610.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSYSMENU01_STR610.resx">
+      <DependentUpon>frmSYSMENU01_STR610.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHAKKEN01.resx">
+      <DependentUpon>frmHAKKEN01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNAMELESS01.resx">
+      <DependentUpon>frmNAMELESS01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEJECTCARD_Restore.resx">
+      <DependentUpon>frmEJECTCARD_Restore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmINFOEx.resx">
+      <DependentUpon>frmINFOEx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmINFOEx02.resx">
+      <DependentUpon>frmINFOEx02.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="atm01.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

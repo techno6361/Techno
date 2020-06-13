@@ -1,0 +1,175 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NKNDISP03
+</name>
+</assembly>
+<members>
+<member name="F:GRAN31.UI.frmNKNDISP03.c_strPRGID">
+	<summary>
+ プログラムID
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmNKNDISP03._blnCardFLG">
+	<summary>
+ カード挿入済み確認フラグ【True】挿入済み
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmNKNDISP03._strSTFCODE">
+	<summary>
+ スタッフコード
+ </summary>
+	<remarks></remarks>
+</member><member name="F:GRAN31.UI.frmNKNDISP03._strSTFNAME">
+	<summary>
+ スタッフ名
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.frmNKNDISP03_Shown(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.btnCard_Click(System.Object,System.EventArgs)">
+	<summary>
+ カード確認ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.rdoMember_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 種別ラジオボタン_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.chkHOKENKIN_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 保険料チェックボックス_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.chkCARTKIN_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ カート料チェックボックス_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.chkCOMPEKIN_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ コンペ料チェックボックス_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.chkPOINT_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 来場ポイントチェックボックス_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.chkPOINTW_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ ﾚﾃﾞｨｰｽポイントチェックボックス_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.chkPOINTS_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ シニアポイントチェックボックス_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.chkPOINT2_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 誕生月・Ｕ40ポイントチェックボックス_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.chkSeisan_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ ポイント精算チェックボックス_CheckedChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.btnRePrint_Click(System.Object,System.EventArgs)">
+	<summary>
+ レシート再発行ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.btnCANCEL_Click(System.Object,System.EventArgs)">
+	<summary>
+ コース料金取消ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.btnNKNNM_Click(System.Object,System.EventArgs)">
+	<summary>
+ コース料金ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.SelectKosu">
+	<summary>
+ コース料金選択
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.GetEIGMTA(System.Int32)">
+	<summary>
+ ﾎﾟｲﾝﾄ情報取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.GetKOSUMTA">
+	<summary>
+ コース料金マスタ情報取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmNKNDISP03.UpdKOSUMTA(System.String,System.Int32,System.Int32,System.Boolean@,System.String@)">
+	<summary>
+ コース料金精算処理
+ </summary>
+	<param name="strNKNNM"></param>
+	<param name="intNKNKN"></param>
+	<param name="intHOLESU"></param>
+	<param name="blnCARD"></param>
+	<param name="strMsg"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

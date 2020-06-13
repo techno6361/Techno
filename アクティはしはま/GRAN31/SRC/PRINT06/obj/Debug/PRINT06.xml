@@ -1,0 +1,205 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PRINT06
+</name>
+</assembly>
+<members>
+<member name="P:GRAN31.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN31.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN31.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="T:GRAN31.UI.BunTotalData">
+	<summary>
+ 分類ごとのデータモデル
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.frmPRINT06_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ ESCキーで処理中断
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.frmPRINT04_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム_Load
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.dtpSEATDT_ValueChanged(System.Object,System.EventArgs)">
+	<summary>
+ 営業日付テキストボックス_ValueChanged
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.cmbTerm_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ 期間コンボボックス
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.txtNCSNO_Validated(System.Object,System.EventArgs)">
+	<summary>
+ 顧客番号テキストボックス_Validated
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.func8">
+	<summary>
+ 印刷ボタン_Click
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.rbSalesList_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 一覧クリック
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.rbSalesDailyReport_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 日報クリック
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.Init">
+	<summary>
+ 画面初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.PrintSalesDailyReport(System.String,System.String)">
+	<summary>
+ 商品売上管理帳票(日報)の印刷(SQL改善)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.PrintBunTotal(System.Data.EnumerableRowCollection{GRAN31.UI.DENTRA}@,System.Data.EnumerableRowCollection{GRAN31.UI.HINMTA}@,System.String,GRAN31.UI.UIExcel@,System.Int32)">
+	<summary>
+ 分類ごとに集計してシートに書き出す
+ </summary>
+	<param name="query"></param>
+	<param name="buncdb"></param>
+	<param name="excel"></param>
+	<param name="col"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.PrintSalesList(System.ComponentModel.BindingList{GRAN31.UI.DUDNTRN_View})">
+	<summary>
+ 商品売上一覧の印刷(SQL改善)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.GetDUDNTRN(System.String,System.String)">
+	<summary>
+ 商品売上一覧の取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.IsAbort(System.Boolean)">
+	<summary>
+ 処理の中断が呼ばれた
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.ResetAbort">
+	<summary>
+ 処理中断の初期化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.ApplyGrid(System.Int32)">
+	<summary>
+ ページングとグリッド処理
+ </summary>
+	<param name="page"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.btnNext_Enabled">
+	<summary>
+ 次へボタンの有効化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.btnNext_Disabled">
+	<summary>
+ 次へボタンの無効化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.btnPrev_Enabled">
+	<summary>
+ 前へボタンの有効化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.btnPrev_Disabled">
+	<summary>
+ 前へボタンの無効化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.AllPaging_Disabled">
+	<summary>
+ ページング処理の無効化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.btnClear_Click(System.Object,System.EventArgs)">
+	<summary>
+ 条件クリアボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.btnClose_Click(System.Object,System.EventArgs)">
+	<summary>
+ 条件選択閉じるボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.btnJoken_Click(System.Object,System.EventArgs)">
+	<summary>
+ 検索条件ボタン_Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.btnFIND_Click(System.Object,System.EventArgs)">
+	<summary>
+ 検索ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.btnPrev_Click(System.Object,System.EventArgs)">
+	<summary>
+ Prevボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.btnNext_Click(System.Object,System.EventArgs)">
+	<summary>
+ Nextボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN31.UI.frmPRINT06.GetShohinList(System.String)">
+	<summary>
+ 商品リスト情報取得
+ </summary>
+	<param name="strBUNCDB"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

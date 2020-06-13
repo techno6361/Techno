@@ -1,0 +1,10 @@
+D:\GRAN29\SRC\PPRINT10\obj\Debug\GRAN29.UI.frmPRINT10.resources
+D:\GRAN29\SRC\PPRINT10\obj\Debug\GRAN29.UI.Resources.resources
+D:\GRAN29\SRC\PPRINT10\obj\Debug\PPRINT10.vbproj.GenerateResource.Cache
+D:\GRAN29\DLL\PPRINT10.exe
+D:\GRAN29\DLL\PPRINT10.pdb
+D:\GRAN29\DLL\PPRINT10.xml
+D:\GRAN29\SRC\PPRINT10\obj\Debug\PPRINT10.exe
+D:\GRAN29\SRC\PPRINT10\obj\Debug\PPRINT10.xml
+D:\GRAN29\SRC\PPRINT10\obj\Debug\PPRINT10.pdb
+D:\GRAN29\SRC\PPRINT10\obj\Debug\PPRINT10.vbprojResolveAssemblyReference.cache

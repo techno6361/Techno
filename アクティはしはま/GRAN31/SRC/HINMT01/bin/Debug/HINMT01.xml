@@ -1,0 +1,176 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+HINMT01
+</name>
+</assembly>
+<members>
+<member name="M:GRAN29.UI.frmHINMT01.frmHINMT01_Shown(System.Object,System.EventArgs)">
+	<summary>
+ Shown
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.func11">
+	<summary>
+ F11クリアボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.func12">
+	<summary>
+ F12登録ボタン押下処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.Init(System.Boolean)">
+	<summary>
+ 画面初期化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.GetHINMTB">
+	<summary>
+ 商品項目タグ名の取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.GetHINMTAs">
+	<summary>
+ 商品マスタの取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.GetHINMTA(System.Data.EnumerableRowCollection{System.Data.DataRow}@,System.String,BaseControl.CustomGridView@,System.ComponentModel.BindingList{GRAN29.UI.HINMTA_View}@)">
+	<summary>
+ 商品マスタをグリッドビューに反映させる
+ </summary>
+	<param name="querys"></param>
+	<param name="buncdb"></param>
+	<param name="dgv"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.GetPOINTMST">
+	<summary>
+ ポイント付与率の取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.InsertHINMTAs">
+	<summary>
+ HINMTAグループの登録
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.InsertHINMTA(System.ComponentModel.BindingList{GRAN29.UI.HINMTA_View}@,System.String)">
+	<summary>
+ HINMTAの登録処理
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.UpdateHINMTB">
+	<summary>
+ HINMTBの更新処理
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.UpdatePOINTMST">
+	<summary>
+ POINTMSTの更新処理
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.GetCurrentUPDDTM">
+	<summary>
+ 現在の最新更新日時を取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.ChkUPDDTM">
+	<summary>
+ 他端末からの更新チェック
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.ShowErrorMessage(System.String)">
+	<summary>
+ エラー表示
+ </summary>
+	<param name="msg"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.EndEditGridViews">
+	<summary>
+ グリッドビューの編集完了
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.dgvs_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ グリッド_KeyPress
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.dgvHINMTA_Enter(System.Object,System.EventArgs)">
+	<summary>
+ グリッドビューのフォーカス状態でReadOnlyセルのフォーカス制御を行う
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.dgvs_CellEnter(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ グリッド_CellEnter
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.dgvHINMTA_CellEndEdit(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ グリッド_入力終了
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.dgvs_CellFormatting(System.Object,System.Windows.Forms.DataGridViewCellFormattingEventArgs)">
+	<summary>
+ グリッド_フォーマット
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.SetTabStopAllControles(System.Boolean)">
+	<summary>
+ すべてのコントロールのTabStopプロパティを設定する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:GRAN29.UI.frmHINMT01.SetReadOnlyThrough(System.Boolean)">
+	<summary>
+ ReadOnlyセルのフォーカスを外す/無効(※未使用)
+ </summary>
+	<param name="sw"></param>
+	<remarks></remarks>
+</member><member name="T:GRAN29.UI.GridViewPosition">
+	<summary>
+ グリッドビューのコントロールと座標を保存する(※未使用)
+ </summary>
+	<remarks></remarks>
+</member><member name="T:GRAN29.UI.HINMTA_View">
+	<summary>
+ 商品マスタビュー
+ </summary>
+	<remarks></remarks>
+</member><member name="P:GRAN29.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:GRAN29.UI.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:GRAN29.UI.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>
